@@ -1,4 +1,4 @@
-# NOAA-NMFS Brand Resources�
+# NOAA-NMFS Brand Resources 
 
 <img src="./logos/repo_logo2.png" align="right" alt="logo" width="350"/>
 
@@ -16,6 +16,7 @@ A collection of color palettes, logos, and icons.
    - [NOAA Logo Icons](#noaa-logo-icons)
 4. [NOAA Fisheries Color Chart](#noaa-fisheries-color-chart-2023)
 5. [NMFS Color Palette Python Script](./script/nmfs-color-palette-script.ipynb)
+6. [Other Resources](#other-resources)
 
 ## Color Palettes
 ### Regional Color Set
@@ -112,9 +113,17 @@ A collection of color palettes, logos, and icons.
 
 ### NOAA Fisheries Color Chart (2023)
 [![](./docs/NOAA_Fisheries_color_chart_2023.png)](./docs/NOAA_Fisheries_color_chart_2023.pdf) 
+
+### Other Resources
+- https://nmfs-opensci.github.io/ResourceBook/content/templates.html
+- https://noaa-fisheries.webflow.io/style-noaa-style-guide
+- https://github.com/nmfs-fish-tools/nmfspalette
+### Other Resources - (Internal-NOAA) 
+- (Internal-NOAA) https://sites.google.com/noaa.gov/pifsc-intranet/science-operations/technical-services/graphics-services
+- (Internal-NOAA) https://sites.google.com/noaa.gov/pifsc-intranet/publications-station
 ----------
 #### Disclaimer
-This repository is a scientific product and is not official communication of the National Oceanic and Atmospheric Administration, or the United States Department of Commerce. All NOAA GitHub project content is provided on an ‘as is’ basis and the user assumes responsibility for its use. Any claims against the Department of Commerce or Department of Commerce bureaus stemming from the use of this GitHub project will be governed by all applicable Federal law. Any reference to specific commercial products, processes, or services by service mark, trademark, manufacturer, or otherwise, does not constitute or imply their endorsement, recommendation or favoring by the Department of Commerce. The Department of Commerce seal and logo, or the seal and logo of a DOC bureau, shall not be used in any manner to imply endorsement of any commercial product or activity by DOC or the United States Government.
+This repository is a scientific product and is not official communication of the National Oceanic and Atmospheric Administration, or the United States Department of Commerce. All NOAA GitHub project content is provided on an â€˜as isâ€™ basis and the user assumes responsibility for its use. Any claims against the Department of Commerce or Department of Commerce bureaus stemming from the use of this GitHub project will be governed by all applicable Federal law. Any reference to specific commercial products, processes, or services by service mark, trademark, manufacturer, or otherwise, does not constitute or imply their endorsement, recommendation or favoring by the Department of Commerce. The Department of Commerce seal and logo, or the seal and logo of a DOC bureau, shall not be used in any manner to imply endorsement of any commercial product or activity by DOC or the United States Government.
 
 ##### License
 See the [LICENSE.md](./LICENSE.md) for details
