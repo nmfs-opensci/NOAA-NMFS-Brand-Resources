@@ -86,12 +86,12 @@ A collection of color palettes, logos, and icons.
 ### NOAA Logos
 | Logo                           | Preview                                                        |
 |--------------------------------|----------------------------------------------------------------|
-| NOAA Emblem                | <img src="./logos/noaa_emblem_logo-2022.png" alt="NOAA Fisheries Logo Vertical" width="250"> |
+| NOAA Seal                | <img src="./logos/noaa_emblem_logo-2022.png" alt="NOAA Fisheries Logo Vertical" width="250"> |
 | NOAA Logo                      | <img src="./logos/noaa_digital_logo-2022.png" alt="NOAA Fisheries Logo" width="250">|
-| NOAA Fisheries Logo  (Horizontal)   | <img src="./logos/NOAA_FISHERIES_H.png" alt="NOAA Fisheries Logo Horizontal" width="350">|
-| NOAA Fisheries Logo (Horizontal-web)  | <img src="./logos/NOAA_FISHERIES_logoH_web.png" alt="NOAA Fisheries Logo Horizontal-web" width="350">|
-| NOAA Fisheries Logo (Vertical) | <img src="./logos/NOAA_FISHERIES_V.png" alt="NOAA Fisheries Logo Vertical" width="250"> |
-| NOAA Fisheries Logo (Vertical-web) | <img src="./logos/NOAA_FISHERIES_logoV_web.png" alt="NOAA Fisheries Logo Vertical" width="250"> |
+| NOAA Fisheries Emblem  (Horizontal)   | <img src="./logos/NOAA_FISHERIES_H.png" alt="NOAA Fisheries Logo Horizontal" width="350">|
+| NOAA Fisheries Emblem (Horizontal-web)  | <img src="./logos/NOAA_FISHERIES_logoH_web.png" alt="NOAA Fisheries Logo Horizontal-web" width="350">|
+| NOAA Fisheries Emblem (Vertical) | <img src="./logos/NOAA_FISHERIES_V.png" alt="NOAA Fisheries Logo Vertical" width="250"> |
+| NOAA Fisheries Emblem (Vertical-web) | <img src="./logos/NOAA_FISHERIES_logoV_web.png" alt="NOAA Fisheries Logo Vertical" width="250"> |
 | NOAA Fisheries Open Science Logo | <img src="./logos/nmfs-opensci-logo3.png" alt="NOAA Fisheries Logo Vertical" width="350"> |
 
 
