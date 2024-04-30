@@ -13,7 +13,7 @@ A collection of color palettes, logos, and icons.
 2. [Comprehensive Color Guide](#comprehensive-color-guide)
 3. [Logos](#logos)
    - [NOAA Logos](#noaa-logos)
-   - [NOAA Logo Icons](#noaa-logo-icons)
+   - [NOAA Logo Icons](#noaa-logo-icons---for-webapp-purposes)
 4. [NOAA Fisheries Color Chart](#noaa-fisheries-color-chart-2023)
 5. [NMFS Color Palette Python Script](./script/nmfs-color-palette-script.ipynb)
 6. [Other Resources](#other-resources)
@@ -99,8 +99,8 @@ A collection of color palettes, logos, and icons.
 | Icon                         | Preview                                                   |
 |------------------------------|-----------------------------------------------------------|
 | favicon.ico                  | <img src="./logo-icons/favicon.ico" alt="favicon">       |
-| favicon-16x16.png            | <img src="./logo-icons/favicon-16x16.png" alt="favicon-16x16">  |
-| favicon-32x32.png            | <img src="./logo-icons/favicon-32x32.png" alt="favicon-32x32">  |
+| noaa-icon-16x16.png            | <img src="./logo-icons/noaa-icon-16x16.png" alt="noaa-icon-16x16">  |
+| noaa-icon-32x32.png            | <img src="./logo-icons/noaa-icon-32x32.png" alt="noaa-icon-32x32">  |
 | noaa-icon-57x57.png          | <img src="./logo-icons/noaa-icon-57x57.png" alt="noaa-icon-57x57">   |
 | noaa-icon-60x60.png          | <img src="./logo-icons/noaa-icon-60x60.png" alt="noaa-icon-60x60">   |
 | noaa-icon-72x72.png          | <img src="./logo-icons/noaa-icon-72x72.png" alt="noaa-icon-72x72">   |
