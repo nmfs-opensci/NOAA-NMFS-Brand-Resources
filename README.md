@@ -59,9 +59,9 @@ A collection of color palettes, logos, and icons.
 
 | Description          | Swatch | 
 |----------------------|--------|
-| NOAA Light Blue      | ![](./center-swatches/noaa-light-blue.png)  `#0093D0` |
-| NOAA Dark Blue       | ![](./center-swatches/noaa-dark-blue.png)  `#0055A4` |
-| Navy Blue Pantone    | ![](./center-swatches/navy-blue-pantone.png)  `#00467F` |
+| NOAA Dark Blue  (Sky)     | ![](./center-swatches/noaa-dark-blue.png)  `#003087` |
+| Body (Bird)      | ![](./center-swatches/body-bg.png)  `#FFFFFF` |
+| NOAA Light Blue   (water)   | ![](./center-swatches/noaa-light-blue.png)  `#0085CA` |
 
 ### Grays and Extended Palettes
 
