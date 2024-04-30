@@ -94,11 +94,7 @@ A collection of color palettes, logos, and icons.
 | NOAA Fisheries Emblem (Vertical-web) | <img src="./logos/NOAA_FISHERIES_logoV_web.png" alt="NOAA Fisheries Logo Vertical" width="250"> |
 | NOAA Fisheries Open Science Logo | <img src="./logos/nmfs-opensci-logo3.png" alt="NOAA Fisheries Logo Vertical" width="350"> |
 
-
-
-
-
-## NOAA Logo Icons
+## NOAA Logo Icons - For Web/App Purposes
 
 | Icon                         | Preview                                                   |
 |------------------------------|-----------------------------------------------------------|
