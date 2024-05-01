@@ -1,0 +1,5 @@
+streamlit
+plotnine
+matplotlib
+numpy
+seaborn
