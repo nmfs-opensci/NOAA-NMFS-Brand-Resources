@@ -83,6 +83,6 @@ This repository is a scientific product and is not official communication of the
 See the [LICENSE.md](https://github.com/MichaelAkridge-NOAA/NOAA-NMFS-Brand-Resources/tree/nmfspalettepy/LICENSE.md) for details
 
 ##### Credits
-- Inspired by: 
-   - https://github.com/nmfs-fish-tools/nmfspalette/
-   - https://connect.fisheries.noaa.gov/colors/
+- Inspired by the work of (https://github.com/ChristineStawitz-NOAA) and other devs of: 
+   - R Package: https://github.com/nmfs-fish-tools/nmfspalette/
+   - R App/plot Tutorial: https://connect.fisheries.noaa.gov/colors/
