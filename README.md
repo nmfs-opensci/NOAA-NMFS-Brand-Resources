@@ -20,6 +20,8 @@ A collection of color palettes, logos, and icons.
    - [NMFS Color Palette Python Script](./script/nmfs-color-palette-script.ipynb)
    - [NMFS Icon Maker Python Script](./script/nmfs-icon-maker-script.ipynb)
 6. [Other Resources](#other-resources)
+7. [Disclaimer | License | Credits](#disclaimer)
+
 ## NMFS Color Palettes Explorer
 ### https://connect.fisheries.noaa.gov/nmfs-color-explorer/
 <a href="https://connect.fisheries.noaa.gov/nmfs-color-explorer/" target="_blank">
@@ -144,6 +146,6 @@ See the [LICENSE.md](./LICENSE.md) for details
 - [https://www.noaa.gov/office-of-communication/about-noaa-emblem-and-logo](https://www.noaa.gov/office-of-communication/about-noaa-emblem-and-logo)
 
 ##### Credits
-- Inspired by: 
-   - https://github.com/nmfs-fish-tools/nmfspalette/
-   - https://connect.fisheries.noaa.gov/colors/
+- Inspired by the work of (https://github.com/ChristineStawitz-NOAA) and other devs of:
+   - R Package: https://github.com/nmfs-fish-tools/nmfspalette/
+   - R App/plot Tutorial: https://connect.fisheries.noaa.gov/colors/
