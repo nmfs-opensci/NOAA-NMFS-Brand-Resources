@@ -4,6 +4,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.colors import LinearSegmentedColormap
 import seaborn as sns
+st.set_page_config(page_title="NMFS Color Palettes Explorer")
 # Define the nmfs color palettes
 nmfs_palettes = {
     "oceans": ["#001743", "#002364", "#003087", "#0085CA", "#5EB6D9", "#C6E6F0"],
@@ -54,18 +55,24 @@ def show_palette_and_plot(palette_name):
     # Display the Matplotlib figure
     st.pyplot(fig)
 
+def show_boxplot(data, x_var, y_var, hue_var, palette_name):
+    """Displays a boxplot for the given dataset themed by the selected palette."""
+    palette = nmfs_palettes.get(palette_name, ["#555555"])  # Default grey if not found
+    plt.figure(figsize=(10, 6))
+    sns.boxplot(x=x_var, y=y_var, hue=hue_var, palette=palette, data=data)
+    sns.despine(offset=10, trim=True)
+    st.pyplot(plt.gcf())
 
-penguins = sns.load_dataset("penguins")
-# Remove rows with missing values
-penguins_clean = penguins.dropna()
+def show_lineplot(data, x_var, y_var, hue_var, palette_name):
+    """Displays a line plot for the given dataset themed by the selected palette."""
+    palette = nmfs_palettes.get(palette_name, ["#555555"])  # Default grey if not found
+    plt.figure(figsize=(10, 6))
+    sns.lineplot(x=x_var, y=y_var, hue=hue_var, palette=palette, data=data)
+    plt.title(f"{y_var.capitalize()} over {x_var.capitalize()} by {hue_var.capitalize()}")
+    plt.grid(True)
+    sns.despine(offset=10, trim=True)
+    st.pyplot(plt.gcf())
 
-# Streamlit app
-st.title("NMFS Color Palettes Explorer")
-st.write("""
-A Python color palette and palette explorer using NOAA Fisheries branding colors.
-""")
-
-# Sidebar for user inputs
 with st.sidebar:
     st.title("NMFS Color Palettes Explorer")
     st.write("""
@@ -78,8 +85,30 @@ with st.sidebar:
         st.subheader(name)
         display_palette(nmfs_palettes[name])
 
-# Show the selected palette and plot
-st.subheader("Select Palette:")
-palette_name = st.selectbox("Select Palette", list(nmfs_palettes.keys()), index=0)
-st.subheader(palette_name)
-show_palette_and_plot(palette_name)
+# Load the penguins dataset
+penguins = sns.load_dataset("penguins")
+penguins_clean = penguins.dropna()
+
+# Streamlit app setup
+st.title("NMFS Color Palettes Explorer")
+st.write("A Python color palette and palette explorer using NOAA Fisheries branding colors.")
+
+# Main page setup for plot selection
+plot_type = st.selectbox("Choose Plot Type", ["Palette Plot", "Boxplot", "Line Plot"], index=0)
+if plot_type == "Palette Plot":
+    palette_name = st.selectbox("Select Palette", list(nmfs_palettes.keys()), index=0)
+    show_palette_and_plot(palette_name)
+elif plot_type == "Boxplot":
+    palette_name = st.selectbox("Select Palette for Boxplot", list(nmfs_palettes.keys()), index=0)
+    x_var = st.selectbox("Select X-axis Variable", ['species', 'island', 'sex'], index=0)
+    y_var = st.selectbox("Select Y-axis Variable", ['body_mass_g', 'flipper_length_mm', 'bill_length_mm', 'bill_depth_mm'], index=0)
+    hue_var = st.selectbox("Select Hue Variable (optional)", ['None', 'species', 'island', 'sex'], index=0)
+    hue_var = None if hue_var == 'None' else hue_var
+    show_boxplot(penguins_clean, x_var, y_var, hue_var, palette_name)
+elif plot_type == "Line Plot":
+    palette_name = st.selectbox("Select Palette for Line Plot", list(nmfs_palettes.keys()), index=0)
+    x_var = st.selectbox("Select X-axis Variable for Line Plot", ['body_mass_g', 'flipper_length_mm', 'bill_length_mm', 'bill_depth_mm'], index=0)
+    y_var = st.selectbox("Select Y-axis Variable for Line Plot", ['flipper_length_mm', 'body_mass_g', 'bill_length_mm', 'bill_depth_mm'], index=0)
+    hue_var = st.selectbox("Select Hue Variable for Line Plot", ['species', 'island', 'sex'], index=0)
+    show_lineplot(penguins_clean, x_var, y_var, hue_var, palette_name)
+
