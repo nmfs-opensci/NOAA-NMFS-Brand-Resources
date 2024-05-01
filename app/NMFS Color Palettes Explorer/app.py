@@ -36,6 +36,10 @@ def nmfs_palette(name, n=100):
 
 def show_palette_and_plot(palette_name):
     """Displays the named palette with 10 interpolations and plot."""
+    if palette_name not in nmfs_palettes:
+        st.error("Invalid palette name selected.")
+        return
+
     display_palette(nmfs_palettes[palette_name], n=10)
     
     p = (
@@ -50,6 +54,7 @@ def show_palette_and_plot(palette_name):
     # Display the Matplotlib figure
     st.pyplot(fig)
 
+
 penguins = sns.load_dataset("penguins")
 # Remove rows with missing values
 penguins_clean = penguins.dropna()
@@ -63,8 +68,6 @@ A Python color palette and palette explorer using NOAA Fisheries branding colors
 # Sidebar for user inputs
 with st.sidebar:
     st.title("NMFS Color Palettes Explorer")
-    #st.subheader("Select Palette:")
-    #palette_name = st.selectbox("Select Palette",list(nmfs_palettes.keys()), index=0)
     st.write("""
     For a collection of color palettes, logos, and icons and more information
     - Visit the GitHub repository: [NOAA NMFS Brand Resources](https://github.com/MichaelAkridge-NOAA/NOAA-NMFS-Brand-Resources)
@@ -77,7 +80,6 @@ with st.sidebar:
 
 # Show the selected palette and plot
 st.subheader("Select Palette:")
-palette_name = st.selectbox("Select Palette",list(nmfs_palettes.keys()), index=0)
+palette_name = st.selectbox("Select Palette", list(nmfs_palettes.keys()), index=0)
 st.subheader(palette_name)
 show_palette_and_plot(palette_name)
-
