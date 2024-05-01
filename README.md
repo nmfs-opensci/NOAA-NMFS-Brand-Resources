@@ -1,6 +1,9 @@
 # nmfspalettepy
 
-`nmfspalettepy` is a Python library designed to facilitate the use of National Marine Fisheries Service (NMFS) color palettes for data visualization projects. It provides easy access to a series of color schemes.
+`nmfspalettepy` is a Python library designed to facilitate the use of National Marine Fisheries Service (NMFS) color palettes for data visualization. It provides easy access to a series of NMFS color schemes.
+
+## Source:
+- view on Github: https://github.com/MichaelAkridge-NOAA/NOAA-NMFS-Brand-Resources/tree/nmfspalettepy
 
 ## Features
 
@@ -10,19 +13,22 @@
 
 ## Installation
 
-### Install from Github
+### Install
+
+To install `nmfspalettepy`, you can use pip. Simply run the following command:
+
+```
+pip install nmfspalettepy
+```
+
+#### To Install From Source
 ```
 git clone -b nmfspalettepy https://github.com/MichaelAkridge-NOAA/NOAA-NMFS-Brand-Resources.git
 cd NOAA-NMFS-Brand-Resources
 python setup.py install
 ```
 
-TODO: 
-To install `nmfspalettepy`, you can use pip. Simply run the following command:
-
-```
-pip install nmfspalettepy
-```
+## To Use
 
 ## Listing Available Color Palettes
 
@@ -74,7 +80,7 @@ print("Hex codes for 'waves':", colors_hex)
 This repository is a scientific product and is not official communication of the National Oceanic and Atmospheric Administration, or the United States Department of Commerce. All NOAA GitHub project content is provided on an ‘as is’ basis and the user assumes responsibility for its use. Any claims against the Department of Commerce or Department of Commerce bureaus stemming from the use of this GitHub project will be governed by all applicable Federal law. Any reference to specific commercial products, processes, or services by service mark, trademark, manufacturer, or otherwise, does not constitute or imply their endorsement, recommendation or favoring by the Department of Commerce. The Department of Commerce seal and logo, or the seal and logo of a DOC bureau, shall not be used in any manner to imply endorsement of any commercial product or activity by DOC or the United States Government.
 
 ##### License
-See the [LICENSE.md](./LICENSE.md) for details
+See the [LICENSE.md](https://github.com/MichaelAkridge-NOAA/NOAA-NMFS-Brand-Resources/tree/nmfspalettepy/LICENSE.md) for details
 
 ##### Credits
 - Inspired by: 
