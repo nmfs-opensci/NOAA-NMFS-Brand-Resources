@@ -119,7 +119,9 @@ A collection of color palettes, logos, and icons.
 ### Other Resources
 - https://nmfs-opensci.github.io/ResourceBook/content/templates.html
 - https://noaa-fisheries.webflow.io/style-noaa-style-guide
-- https://github.com/nmfs-fish-tools/nmfspalette
+- Inspired by R versions: 
+   - https://github.com/nmfs-fish-tools/nmfspalette/
+   - https://connect.fisheries.noaa.gov/colors/
 ### Other Resources - (Internal-NOAA) 
 - (Internal-NOAA) https://sites.google.com/noaa.gov/pifsc-intranet/science-operations/technical-services/graphics-services
 - (Internal-NOAA) https://sites.google.com/noaa.gov/pifsc-intranet/publications-station
