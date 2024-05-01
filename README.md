@@ -29,9 +29,8 @@ pip install nmfspalettepy
 To see a list of all available color palettes you can use with `nmfspalettepy`, simply call the `list_nmfs_palettes` function:
 
 ```
-from nmfspalettepy
-
-print(list_nmfs_palettes())
+import nmfspalettepy
+print(nmfspalettepy.list_nmfs_palettes())
 ```
 
 ## Usage Examples
