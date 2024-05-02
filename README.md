@@ -16,7 +16,8 @@ A collection of color palettes, logos, and icons.
    - [NOAA Logos](#noaa-logos)
    - [NOAA Logo Icons](#noaa-logo-icons---for-webapp-purposes)
 4. [NOAA Fisheries Color Chart](#noaa-fisheries-color-chart-2023)
-5. Python Scripts
+5. Python
+   - [Python Package | nmfspalettepy](./script/nmfs-color-palette-script.ipynb)
    - [NMFS Color Palette Python Script](./script/nmfs-color-palette-script.ipynb)
    - [NMFS Icon Maker Python Script](./script/nmfs-icon-maker-script.ipynb)
 6. [Other Resources](#other-resources)
@@ -123,6 +124,21 @@ A collection of color palettes, logos, and icons.
 
 ### NOAA Fisheries Color Chart (2023)
 [![](./docs/NOAA_Fisheries_color_chart_2023.png)](./docs/NOAA_Fisheries_color_chart_2023.pdf) 
+
+### Python
+#### Python Package
+   - [View Python Package | nmfspalettepy](https://pypi.org/project/nmfspalettepy))
+   - How to use and more details:
+      - https://github.com/MichaelAkridge-NOAA/NOAA-NMFS-Brand-Resources/tree/nmfspalettepy
+Install
+```
+pip install nmfspalettepy
+```
+
+#### Scripts
+   - [NMFS Color Palette Python Script](./script/nmfs-color-palette-script.ipynb)
+   - [NMFS Icon Maker Python Script](./script/nmfs-icon-maker-script.ipynb)
+
 
 ### Other Resources
 - https://nmfs-opensci.github.io/ResourceBook/content/templates.html
