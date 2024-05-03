@@ -1,19 +1,16 @@
 # nmfspalettepy
-
+<a href="https://pypi.org/project/nmfspalettepy">
+    <img src="./docs/nmfspalettepy_250.png" align="right" alt="logo"/>
+</a>
 `nmfspalettepy` is a Python library designed to facilitate the use of National Marine Fisheries Service (NMFS) color palettes for data visualization. It provides easy access to a series of NMFS color schemes.
 
-## Source:
-- view on Github: https://github.com/MichaelAkridge-NOAA/NOAA-NMFS-Brand-Resources/tree/nmfspalettepy
-
-## Features
+### Features
 
 - Provides a set of predefined color palettes using the NMFS color palettes.
 - Functions to display and utilize these palettes in visualizations.
 - Easy integration with matplotlib for creating custom color maps.
 
-## Installation
-
-### Install
+### Installation
 
 To install `nmfspalettepy`, you can use pip. Simply run the following command:
 
