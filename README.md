@@ -10,6 +10,7 @@
 - Functions to display and utilize these palettes in visualizations.
 - Easy integration with matplotlib for creating custom color maps.
 
+
 ### Installation
 
 To install `nmfspalettepy`, you can use pip. Simply run the following command:
@@ -35,7 +36,10 @@ To see a list of all available color palettes you can use with `nmfspalettepy`, 
 import nmfspalettepy
 print(nmfspalettepy.list_nmfs_palettes())
 ```
-
+### output
+```
+['oceans', 'waves', 'seagrass', 'urchin', 'crustacean', 'coral']
+```
 ## Usage Examples
 
 ### Display a Color Gradient
@@ -48,7 +52,7 @@ from nmfspalettepy import display_color_gradient, get_palette_colors
 # Display the 'oceans' palette gradient
 display_color_gradient(get_palette_colors("oceans"))
 ```
-
+![](./docs/waves_palette.png)
 ### Creating a Custom Color Map
 ```
 import matplotlib.pyplot as plt
@@ -62,6 +66,7 @@ plt.imshow([[1,2],[2,3]], cmap=cmap)
 plt.colorbar()
 plt.show()
 ```
+![](./docs/waves_plot_square.png)
 ### Getting Hex Codes for a Palette
 
 ```
@@ -71,6 +76,51 @@ from nmfspalettepy import get_palette_colors
 colors_hex = get_palette_colors("waves")
 print("Hex codes for 'waves':", colors_hex)
 
+```
+### output
+```
+Hex codes for 'waves': ['#005E5E', '#00797F', '#1EBEC7', '#90DFE3']
+```
+
+## Examples
+### Plot
+![](./docs/waves_plot.png)
+```
+# example data| import seaborn as sns
+from plotnine.data import penguins
+p = (
+    ggplot(penguins_clean, aes(x='flipper_length_mm', y='body_mass_g', color='species')) +
+    geom_point(size=4) +
+    labs(y="Body Mass (g)", x="Flipper Length (mm)") +
+    theme_bw() +
+    scale_color_manual(values=nmfs_palettes["urchin"])  # Use 'urchin' palette
+)
+
+# Show the plot
+p.show()
+```
+
+### Boxplot
+![](./docs/waves_boxplot.png)
+```
+def show_boxplot(data, x_var, y_var, hue_var, palette_name):
+    palette = nmfs_palettes.get(palette_name, ["#555555"])  # Default grey if not found
+    plt.figure(figsize=(10, 6))
+    sns.boxplot(x=x_var, y=y_var, hue=hue_var, palette=palette, data=data)
+    sns.despine(offset=10, trim=True)
+    plt.show()
+```
+### LinePlot
+![](./docs/waves_lineplot.png)
+```
+def show_lineplot(data, x_var, y_var, hue_var, palette_name):
+    palette = nmfs_palettes.get(palette_name, ["#555555"])  # Default grey if not found
+    plt.figure(figsize=(10, 6))
+    sns.lineplot(x=x_var, y=y_var, hue=hue_var, palette=palette, data=data)
+    plt.title(f"{y_var.capitalize()} over {x_var.capitalize()} by {hue_var.capitalize()}")
+    plt.grid(True)
+    sns.despine(offset=10, trim=True)
+    plt.show()
 ```
 ----------
 #### Disclaimer
