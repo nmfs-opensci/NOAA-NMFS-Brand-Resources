@@ -9,10 +9,22 @@
 - Provides a set of predefined color palettes using the NMFS color palettes.
 - Functions to display and utilize these palettes in visualizations.
 - Easy integration with matplotlib for creating custom color maps.
+# Table of Contents
 
-
-### Installation
-
+- [Installation](#installation)
+  - [To Install via pip](#installation)
+  - [To Install From Source](#to-install-from-source)
+- [Usage](#usage)
+  - [Listing Available Color Palettes](#listing-available-color-palettes)
+  - [Display a Color Gradient](#display-a-color-gradient)
+  - [Creating a Custom Color Map](#creating-a-custom-color-map)
+  - [Getting Hex Codes for a Palette](#getting-hex-codes-for-a-palette)
+- [Examples](#examples)
+  - [Plot](#plot)
+  - [Boxplot](#boxplot)
+  - [LinePlot](#lineplot)
+## Installation
+#### To Install via pip
 To install `nmfspalettepy`, you can use pip. Simply run the following command:
 
 ```
@@ -26,7 +38,7 @@ cd NOAA-NMFS-Brand-Resources
 python setup.py install
 ```
 
-## To Use
+## Usage
 
 ## Listing Available Color Palettes
 
@@ -40,7 +52,6 @@ print(nmfspalettepy.list_nmfs_palettes())
 ```
 ['oceans', 'waves', 'seagrass', 'urchin', 'crustacean', 'coral']
 ```
-## Usage Examples
 
 ### Display a Color Gradient
 
