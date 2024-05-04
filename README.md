@@ -139,7 +139,29 @@ pip install nmfspalettepy
 | noaa-icon-180x180.png        | <img src="./logo-icons/noaa-icon-180x180.png" alt="noaa-icon-180x180"> |
 
 ### NOAA Fisheries Color Chart (2023)
-[![](./docs/NOAA_Fisheries_color_chart_2023.png)](./docs/NOAA_Fisheries_color_chart_2023.pdf) 
+### NOAA NMFS Core Colors
+![NOAA NMFS Core Colors Sky](./color-palette/noaa_nmfs_core_colors_sky.png)
+![NOAA NMFS Core Colors Sea](./color-palette/noaa_nmfs_core_colors_sea.png)
+![NOAA NMFS Core Colors - Gray](./color-palette/noaa_nmfs_core_colors_-_gray.png)
+
+### NOAA NMFS Complementary Colors
+
+![NMFS Complementary Colors Coral](./color-palette/nmfs_complementary_colors_coral.png)
+![NMFS Complementary Colors Crustacean](./color-palette/nmfs_complementary_colors_crustacean.png)
+![NMFS Complementary Colors Seagrass](./color-palette/nmfs_complementary_colors_seagrass.png)
+![NMFS Complementary Colors Teal](./color-palette/nmfs_complementary_colors_teal.png)
+![NMFS Complementary Colors Urchin](./color-palette/nmfs_complementary_colors_urchin.png)
+
+### NOAA NMFS Background Colors
+![NMFS Background Colors Green](./color-palette/nmfs_background_colors_green.png)
+![NMFS Background Colors Sky](./color-palette/nmfs_background_colors_sky.png)
+![NMFS Background Colors Gray](./color-palette/nmfs_background_colors_gray.png)
+
+### NOAA NMFS Alert Colors
+![NOAA Alert Colors Green](./color-palette/noaa_alert_colors_green.png)
+![NOAA Alert Colors Orange](./color-palette/noaa_alert_colors_orange.png)
+![NOAA Alert Colors Red](./color-palette/noaa_alert_colors_red.png)
+![NOAA Alert Colors Yellow](./color-palette/noaa_alert_colors_yellow.png)
 
 ### Other Resources
 - https://nmfs-opensci.github.io/ResourceBook/content/templates.html
