@@ -6,11 +6,13 @@
 
 - [View 'nmfspalettepy' Python Package on PyPi](https://pypi.org/project/nmfspalettepy)
 
-
 ### Features
 - Provides a set of predefined color palettes using the NMFS color palettes.
 - Functions to display and utilize these palettes in visualizations.
 - Easy integration with matplotlib for creating custom color maps.
+
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/MichaelAkridge-NOAA/NOAA-NMFS-Brand-Resources/tree/nmfspalettepy)
+
 # Table of Contents
 
 - [Installation](#installation)
