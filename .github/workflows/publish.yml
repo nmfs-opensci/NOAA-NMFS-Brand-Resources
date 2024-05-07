@@ -3,8 +3,12 @@ on:
   push:
     branches:
       - nmfspalettepy
-  workflow_dispatch: # Allows manual trigger through GitHub UI
-
+  workflow_dispatch:
+    inputs:
+      part:
+        description: 'Part of the version to increase: major, minor, patch'
+        required: true
+        default: 'patch'
 jobs:
   build-and-publish:
     runs-on: ubuntu-latest
@@ -24,10 +28,9 @@ jobs:
           python -m pip install --upgrade pip
           pip install bumpversion setuptools wheel twine build
 
-      - name: Bump version and commit
-        if: github.event_name == 'workflow_dispatch'
+      - name: Bump version
         run: |
-          bumpversion patch
+          bumpversion ${{ github.event.inputs.part }}
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git push
