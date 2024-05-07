@@ -8,7 +8,6 @@ version = "0.1.8"
 description = "NMFS color palettes handling library"
 readme = "./nmfspalettepy/README.md"
 authors = [{ name = "Michael Akridge" }]
-url = "https://github.com/MichaelAkridge-NOAA/NOAA-NMFS-Brand-Resources/tree/nmfspalettepy"
 dependencies = [
     "numpy",
     "matplotlib"
