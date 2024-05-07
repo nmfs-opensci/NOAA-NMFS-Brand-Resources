@@ -17,11 +17,8 @@ A collection of color palettes, logos, and icons.
    - [Grays and Extended Palettes](#grays-and-extended-palettes)
 3. [Comprehensive Color Guide](#comprehensive-color-guide)
 4. [NOAA Fisheries Color Chart](#noaa-fisheries-color-chart-2023)
-5. [Logos](#logos)
-   - [NOAA Logos](#noaa-logos)
-   - [NOAA Logo Icons](#noaa-logo-icons---for-webapp-purposes)
-6. [Other Resources](#other-resources)
-7. [Disclaimer | License | Credits](#disclaimer)
+5. [Other Resources](#other-resources)
+6. [Disclaimer | License | Credits](#disclaimer)
 
 ## NMFS Color Palettes Explorer
 ### https://connect.fisheries.noaa.gov/nmfs-color-explorer/
@@ -129,40 +126,6 @@ pip install nmfspalettepy
 ![NOAA Alert Colors Orange](./color-palette/noaa_alert_colors_orange.png)
 ![NOAA Alert Colors Red](./color-palette/noaa_alert_colors_red.png)
 ![NOAA Alert Colors Yellow](./color-palette/noaa_alert_colors_yellow.png)
-
-## Logos
-##### NOAA-emblem-usage-and-licensing
-- [https://www.noaa.gov/noaa-emblem-usage-and-licensing](https://www.noaa.gov/noaa-emblem-usage-and-licensing)
-- [https://www.noaa.gov/office-of-communication/about-noaa-emblem-and-logo](https://www.noaa.gov/office-of-communication/about-noaa-emblem-and-logo)
-
-### NOAA Logos
-| Logo                           | Preview                                                        |
-|--------------------------------|----------------------------------------------------------------|
-| NOAA Seal                | <img src="./logos/noaa_emblem_logo-2022.png" alt="NOAA Fisheries Logo Vertical" width="250"> |
-| NOAA Logo                      | <img src="./logos/noaa_digital_logo-2022.png" alt="NOAA Fisheries Logo" width="250">|
-| NOAA Fisheries Emblem  (Horizontal)   | <img src="./logos/NOAA_FISHERIES_H.png" alt="NOAA Fisheries Logo Horizontal" width="350">|
-| NOAA Fisheries Emblem (Horizontal-web)  | <img src="./logos/NOAA_FISHERIES_logoH_web.png" alt="NOAA Fisheries Logo Horizontal-web" width="350">|
-| NOAA Fisheries Emblem (Vertical) | <img src="./logos/NOAA_FISHERIES_V.png" alt="NOAA Fisheries Logo Vertical" width="250"> |
-| NOAA Fisheries Emblem (Vertical-web) | <img src="./logos/NOAA_FISHERIES_logoV_web.png" alt="NOAA Fisheries Logo Vertical" width="250"> |
-| NOAA Fisheries Open Science Logo | <img src="./logos/nmfs-opensci-logo3.png" alt="NOAA Fisheries Logo Vertical" width="350"> |
-
-## NOAA Logo Icons - For Web/App Purposes
-
-| Icon                         | Preview                                                   |
-|------------------------------|-----------------------------------------------------------|
-| favicon.ico                  | <img src="./logo-icons/favicon.ico" alt="favicon">       |
-| noaa-icon-16x16.png            | <img src="./logo-icons/noaa-icon-16x16.png" alt="noaa-icon-16x16">  |
-| noaa-icon-32x32.png            | <img src="./logo-icons/noaa-icon-32x32.png" alt="noaa-icon-32x32">  |
-| noaa-icon-57x57.png          | <img src="./logo-icons/noaa-icon-57x57.png" alt="noaa-icon-57x57">   |
-| noaa-icon-60x60.png          | <img src="./logo-icons/noaa-icon-60x60.png" alt="noaa-icon-60x60">   |
-| noaa-icon-72x72.png          | <img src="./logo-icons/noaa-icon-72x72.png" alt="noaa-icon-72x72">   |
-| noaa-icon-76x76.png          | <img src="./logo-icons/noaa-icon-76x76.png" alt="noaa-icon-76x76">   |     
-| noaa-icon-114x114.png        | <img src="./logo-icons/noaa-icon-114x114.png" alt="noaa-icon-114x114"> |
-| noaa-icon-120x120.png        | <img src="./logo-icons/noaa-icon-120x120.png" alt="noaa-icon-120x120"> |
-| noaa-icon-144x144.png        | <img src="./logo-icons/noaa-icon-144x144.png" alt="noaa-icon-144x144">  |
-| noaa-icon-152x152.png        | <img src="./logo-icons/noaa-icon-152x152.png" alt="noaa-icon-152x152"> |
-| noaa-icon-180x180.png        | <img src="./logo-icons/noaa-icon-180x180.png" alt="noaa-icon-180x180"> |
-
 
 ### Other Resources
 - https://nmfs-opensci.github.io/ResourceBook/content/templates.html
