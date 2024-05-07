@@ -20,13 +20,13 @@ jobs:
           python -m pip install --upgrade pip
           pip install bumpversion setuptools wheel twine
 
+      - name: Configure Git identity
+        run: |
+          git config --global user.email "action@github.com"
+          git config --global user.name "GitHub Action"
+
       - name: Bump version (patch)
         run: bumpversion patch
-
-      - name: Configure git
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
 
       - name: Commit and push changes
         run: |
