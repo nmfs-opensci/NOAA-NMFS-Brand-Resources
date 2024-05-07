@@ -3,46 +3,40 @@ on:
   push:
     branches:
       - nmfspalettepy
-  workflow_dispatch:
-    inputs:
-      part:
-        description: 'Part of the version to increase: major, minor, patch'
-        required: true
-        default: 'patch'
 jobs:
   build-and-publish:
     runs-on: ubuntu-latest
     steps:
       - name: Check out code
-        uses: actions/checkout@v3
-        with:
-          fetch-depth: 0 # Ensures history is available for bumpversion tags
+        uses: actions/checkout@v2
 
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v2
         with:
-          python-version: '3.9' # Specify your Python version
+          python-version: '3.9'
 
-      - name: Install build tools
+      - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install bumpversion setuptools wheel twine build
+          pip install bumpversion setuptools wheel twine
 
-      - name: Bump version
+      - name: Bump version (patch)
+        run: bumpversion patch
+
+      - name: Configure git
         run: |
-          bumpversion ${{ github.event.inputs.part }}
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git push
-          git push --tags
+
+      - name: Commit and push changes
+        run: |
+          git push --follow-tags
 
       - name: Build package
-        run: |
-          python -m build --sdist --wheel . -o dist
+        run: python -m build
 
       - name: Publish to PyPI
         uses: pypa/gh-action-pypi-publish@v1.4.2
         with:
           user: __token__
           password: ${{ secrets.PYPI_API_TOKEN }}
-
