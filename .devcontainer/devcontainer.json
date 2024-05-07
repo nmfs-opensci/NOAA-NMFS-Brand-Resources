@@ -2,10 +2,9 @@
   "image": "mcr.microsoft.com/devcontainers/universal:2",
   "waitFor": "onCreateCommand",
   "updateContentCommand": "python3 -m pip install -r requirements.txt",
-  "postCreateCommand": "sleep 10; echo 'Ready to open files...'",
   "customizations": {
     "codespaces": {
-      "openFiles": ["./notebooks/nmfspalettepy_example_notebook.ipynb"]
+      "openFiles": []
     },
     "vscode": {
       "extensions": [
