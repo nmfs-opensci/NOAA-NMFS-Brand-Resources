@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nmfspalettepy"
+version = "0.1.8"
+description = "NMFS color palettes handling library"
+readme = "./nmfspalettepy/README.md"
+authors = [{ name = "Michael Akridge" }]
+url = "https://github.com/MichaelAkridge-NOAA/NOAA-NMFS-Brand-Resources/tree/nmfspalettepy"
+dependencies = [
+    "numpy",
+    "matplotlib"
+]
+classifiers = [
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+]

@@ -1,0 +1,45 @@
+name: Build and Publish to PyPI
+on:
+  push:
+    branches:
+      - nmfspalettepy
+  workflow_dispatch: # Allows manual trigger through GitHub UI
+
+jobs:
+  build-and-publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0 # Ensures history is available for bumpversion tags
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9' # Specify your Python version
+
+      - name: Install build tools
+        run: |
+          python -m pip install --upgrade pip
+          pip install bumpversion setuptools wheel twine build
+
+      - name: Bump version and commit
+        if: github.event_name == 'workflow_dispatch'
+        run: |
+          bumpversion patch
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git push
+          git push --tags
+
+      - name: Build package
+        run: |
+          python -m build --sdist --wheel . -o dist
+
+      - name: Publish to PyPI
+        uses: pypa/gh-action-pypi-publish@v1.4.2
+        with:
+          user: __token__
+          password: ${{ secrets.PYPI_API_TOKEN }}
+
