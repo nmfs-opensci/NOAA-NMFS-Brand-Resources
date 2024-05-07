@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "nmfspalettepy"
-version = "0.1.9"
+version = "0.1.10"
 description = "NMFS color palettes handling library"
 readme = "./nmfspalettepy/README.md"
 authors = [{ name = "Michael Akridge" }]
