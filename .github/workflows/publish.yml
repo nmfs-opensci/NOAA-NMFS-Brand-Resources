@@ -18,7 +18,8 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install bumpversion setuptools wheel twine
+          pip install setuptools wheel twine  # add build here
+          pip install build  # Explicitly install build module
 
       - name: Configure Git identity
         run: |
@@ -33,7 +34,8 @@ jobs:
           git push --follow-tags
 
       - name: Build package
-        run: python -m build
+        run: |
+          python -m build  # Now build should be available
 
       - name: Publish to PyPI
         uses: pypa/gh-action-pypi-publish@v1.4.2
