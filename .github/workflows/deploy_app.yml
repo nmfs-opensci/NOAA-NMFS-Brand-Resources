@@ -1,0 +1,44 @@
+name: Deploy App to Posit Connect
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Install rsconnect-python
+        run: |
+          python -m pip install --upgrade pip
+          pip install rsconnect-python
+
+      - name: Write Manifest
+        run: rsconnect write-manifest streamlit "./app/NMFS Color Palettes Explorer/"
+
+      - name: Commit Manifest and Requirements.txt
+        run: |
+          git config --global user.email "action@github.com"
+          git config --global user.name "GitHub Action"
+          git add "./app/NMFS Color Palettes Explorer/manifest.json" "./app/NMFS Color Palettes Explorer/requirements.txt"
+          git commit -m "Automatically update manifest and requirements.txt" || echo "No changes to commit"
+          git push
+
+      - name: Deploy
+        uses: rstudio/actions/connect-publish@main
+        with:
+          url: https://${{ secrets.TEST_CONNECT_API_KEY }}@test-connect.fisheries.noaa.gov
+          namespace: app
+          dir: "./app/NMFS Color Palettes Explorer/"
+          require-vanity-path: true
+          access-type: all
+
+
