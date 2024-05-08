@@ -32,11 +32,12 @@ jobs:
           git add ./app/NMFS_Color_Palettes_Explorer/manifest.json ./app/NMFS_Color_Palettes_Explorer/requirements.txt
           git commit -m "Automatically update manifest and requirements.txt" || echo "No changes to commit"
           git push
-
-      - name: Deploy
-        uses: rstudio/actions/connect-publish@main
-        with:
-          api-key: ${{ secrets.TEST_CONNECT_API_KEY }}
-          url:  https://test-connect.fisheries.noaa.gov/
-          dir: ./app/NMFS_Color_Palettes_Explorer
-          show-logs: true
+      - name: Publish using rsconnect-python
+        env:
+          CONNECT_SERVER: https://test-connect.fisheries.noaa.gov/
+          CONNECT_API_KEY: ${{ secrets.TEST_CONNECT_API_KEY }}
+          APP_DIR: ./app/NMFS_Color_Palettes_Explorer
+        run: |
+          pip3 install rsconnect-python
+          cd $APP_DIR
+          rsconnect deploy streamlit --server $CONNECT_SERVER --api-key $CONNECT_API_KEY ./
