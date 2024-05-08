@@ -28,7 +28,7 @@ jobs:
         run: |
           git config --global user.email "action@github.com"
           git config --global user.name "GitHub Action"
-          git add ./app/NMFS Color Palettes Explorer/manifest.json ./app/NMFS Color Palettes Explorer/requirements.txt
+          git add ./app/NMFS_Color_Palettes_Explorer/manifest.json ./app/NMFS_Color_Palettes_Explorer/requirements.txt
           git commit -m "Automatically update manifest and requirements.txt" || echo "No changes to commit"
           git push
 
