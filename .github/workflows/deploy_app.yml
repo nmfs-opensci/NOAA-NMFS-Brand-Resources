@@ -1,0 +1,30 @@
+name: Deploy App to Posit Connect
+
+on:
+  push:
+    branches:
+      - main  # Set this to the branch from which you want to deploy
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4  # Updated to latest stable version
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.x'  # Set this to your Python version
+
+    - name: Install pip dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install rsconnect-python
+        pip install -r ./app/NMFS Color Palettes Explorer/requirements.txt  # Install dependencies from requirements.txt
+
+    - name: Deploy to Posit Connect
+      env:
+        RSCONNECT_API_KEY: ${{ secrets.POSIT_CONNECT_API_KEY }}
+        POSIT_CONNECT_SERVER: ${{ secrets.POSIT_SERVER_TEST_URL }}
+      run: rsconnect deploy streamlit --server $POSIT_CONNECT_SERVER --api-key $RSCONNECT_API_KEY ./app/NMFS Color Palettes Explorer/
+
