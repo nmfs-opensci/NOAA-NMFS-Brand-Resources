@@ -36,11 +36,11 @@ jobs:
         env:
           CONNECT_SERVER: https://test-connect.fisheries.noaa.gov/
           CONNECT_API_KEY: ${{ secrets.TEST_CONNECT_API_KEY }}
-          APP_DIR: ./app/NMFS_Color_Palettes_Explorer
+          APP_DIR: ./app/NMFS_Color_Palettes_Explorer/manifest.json
           CONTENT_ID: 239
         run: |
           pip3 install rsconnect-python
-          rsconnect deploy manifest ${{$APP_DIR}} \
+          rsconnect deploy manifest $APP_DIR \
             -s $CONNECT_SERVER \
             -k $CONNECT_API_KEY \
             -a $CONTENT_ID \
