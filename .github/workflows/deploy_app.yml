@@ -31,4 +31,6 @@ jobs:
       - name: Deploy to Posit Connect
         env:
           POSIT_CONNECT_API_KEY: ${{ secrets.TEST_CONNECT_API_KEY }}
-        run: rsconnect deploy streamlit --server https://test-connect.fisheries.noaa.gov/ --api-key $TEST_CONNECT_API_KEY ./app/NMFS_Color_Palettes_Explorer/
+        run: |
+          cd ./app/NMFS_Color_Palettes_Explorer/
+          rsconnect deploy streamlit --server https://test-connect.fisheries.noaa.gov/ --api-key $POSIT_CONNECT_API_KEY ./
