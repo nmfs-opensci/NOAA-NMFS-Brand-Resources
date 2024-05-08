@@ -20,15 +20,15 @@ jobs:
           python -m pip install --upgrade pip
           pip install rsconnect-python
       - name: Write Manifest
-        run: rsconnect write-manifest streamlit "./app/NMFS Color Palettes Explorer" --overwrite
+        run: rsconnect write-manifest streamlit "./app/NMFS_Color_Palettes_Explorer" --overwrite
       - name: Commit Manifest and Requirements.txt
         run: |
           git config --global user.email "action@github.com"
           git config --global user.name "GitHub Action"
-          git add "./app/NMFS Color Palettes Explorer/manifest.json" "./app/NMFS Color Palettes Explorer/requirements.txt"
+          git add "./app/NMFS_Color_Palettes_Explorer/manifest.json" "./app/NMFS_Color_Palettes_Explorer/requirements.txt"
           git commit -m "Automatically update manifest and requirements.txt" || echo "No changes to commit"
           git push
       - name: Deploy to Posit Connect
         env:
           POSIT_CONNECT_API_KEY: ${{ secrets.TEST_CONNECT_API_KEY }}
-        run: rsconnect deploy streamlit --server https://test-connect.fisheries.noaa.gov/ --api-key $TEST_CONNECT_API_KEY "./app/NMFS Color Palettes Explorer/"
+        run: rsconnect deploy streamlit --server https://test-connect.fisheries.noaa.gov/ --api-key $TEST_CONNECT_API_KEY ./app/NMFS_Color_Palettes_Explorer/
