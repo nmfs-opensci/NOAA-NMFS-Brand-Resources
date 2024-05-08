@@ -1,12 +1,12 @@
 {
   "version": 1,
-  "locale": "C.UTF-8",
+  "locale": "en_US.UTF-8",
   "metadata": {
     "appmode": "python-streamlit",
     "entrypoint": "app"
   },
   "python": {
-    "version": "3.12.3",
+    "version": "3.9.19",
     "package_manager": {
       "name": "pip",
       "version": "24.0",
@@ -15,7 +15,7 @@
   },
   "files": {
     "requirements.txt": {
-      "checksum": "24f7466b6c3287d6aa26302e8d699782"
+      "checksum": "be45aeeae75f80e6e6c83351df7cd688"
     },
     "app.py": {
       "checksum": "bc6ea75bb52a8a20cd5c352047a11c11"
