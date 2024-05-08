@@ -7,7 +7,7 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    timeout-minutes: 300  # Timeout for the entire job
+    timeout-minutes: 10  # Timeout for the entire job
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -36,5 +36,7 @@ jobs:
       - name: Deploy
         uses: rstudio/actions/connect-publish@main
         with:
-          url: https://${{ secrets.TEST_CONNECT_API_KEY }}@test-connect.fisheries.noaa.gov
+          api-key: ${{ secrets.TEST_CONNECT_API_KEY }}
+          url:  https://test-connect.fisheries.noaa.gov/
           dir: ./app/NMFS_Color_Palettes_Explorer
+          show-logs: true
