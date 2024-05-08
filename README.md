@@ -2,7 +2,7 @@
 
 <img src="./logos/repo_logo2.png" align="right" alt="logo" width="350"/>
 
-A collection of color palettes, logos, and icons. 
+A collection of color palettes, logos, and icons.  
 ### Table of Contents
 0. [NMFS Color Palettes Explorer](#nmfs-color-palettes-explorer)
 1. Python
