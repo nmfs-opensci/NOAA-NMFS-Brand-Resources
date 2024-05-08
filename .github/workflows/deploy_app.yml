@@ -7,6 +7,7 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    timeout-minutes: 300  # Timeout for the entire job
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -37,6 +38,3 @@ jobs:
         with:
           url: https://${{ secrets.TEST_CONNECT_API_KEY }}@test-connect.fisheries.noaa.gov
           dir: ./app/NMFS_Color_Palettes_Explorer
-
-
-
