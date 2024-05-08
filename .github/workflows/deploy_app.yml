@@ -22,7 +22,7 @@ jobs:
           pip install rsconnect-python
 
       - name: Write Manifest
-        run: rsconnect write-manifest streamlit "./app/NMFS Color Palettes Explorer/"
+        run: rsconnect write-manifest streamlit "./app/NMFS Color Palettes Explorer/" --overwrite
 
       - name: Commit Manifest and Requirements.txt
         run: |
