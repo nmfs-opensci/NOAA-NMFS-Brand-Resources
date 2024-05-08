@@ -20,7 +20,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install rsconnect-python
       - name: Write Manifest
-        run: rsconnect write-manifest streamlit ./app/NMFS-Color-Palettes-Explorer --overwrite
+        run: rsconnect write-manifest streamlit ./app/NMFS-Color-Palettes-Explorer/ --overwrite
       - name: Commit Manifest and Requirements.txt
         run: |
           git config --global user.email "action@github.com"
@@ -35,4 +35,4 @@ jobs:
           url: https://${{ secrets.TEST_CONNECT_API_KEY }}@test-connect.fisheries.noaa.gov
           require-vanity-path: false
           access-type: logged_in
-          dir: ./app/NMFS-Color Palettes-Explorer
+          dir: ./app/NMFS-Color Palettes-Explorer/
