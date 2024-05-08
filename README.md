@@ -23,7 +23,7 @@ A collection of color palettes, logos, and icons.
 ## NMFS Color Palettes Explorer
 ### https://connect.fisheries.noaa.gov/nmfs-color-explorer/
 <a href="https://connect.fisheries.noaa.gov/nmfs-color-explorer/" target="_blank">
-  <img src="./app/NMFS Color Palettes Explorer/s01.png" alt="screenshot">
+  <img src="./app/s01.png" alt="screenshot">
 </a>
 
 ## Python 
