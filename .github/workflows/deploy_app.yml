@@ -15,15 +15,12 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.x'
-
       - name: Install rsconnect-python
         run: |
           python -m pip install --upgrade pip
           pip install rsconnect-python
-
       - name: Write Manifest
         run: rsconnect write-manifest streamlit "./app/NMFS Color Palettes Explorer/" --overwrite
-
       - name: Commit Manifest and Requirements.txt
         run: |
           git config --global user.email "action@github.com"
@@ -35,9 +32,7 @@ jobs:
       - name: Deploy
         uses: rstudio/actions/connect-publish@main
         with:
-          url: https://${{ secrets.TEST_CONNECT_API_KEY }}@test-connect.fisheries.noaa.gov/connect
-          dir: "./app/NMFS Color Palettes Explorer/"
+          url: https://${{ secrets.TEST_CONNECT_API_KEY }}@test-connect.fisheries.noaa.gov
           require-vanity-path: false
-          access-type: all
-
-
+          access-type: logged_in
+          dir: "./app/NMFS Color Palettes Explorer/"
