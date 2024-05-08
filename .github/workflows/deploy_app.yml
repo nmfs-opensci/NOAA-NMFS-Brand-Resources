@@ -34,7 +34,7 @@ jobs:
           git push
       - name: Publish using rsconnect-python
         env:
-          CONNECT_SERVER: https://test-connect.fisheries.noaa.gov/
+          CONNECT_SERVER: https://test-connect.fisheries.noaa.gov/connect
           CONNECT_API_KEY: ${{ secrets.TEST_CONNECT_API_KEY }}
           APP_DIR: ./app/NMFS_Color_Palettes_Explorer/manifest.json
           CONTENT_ID: 239
