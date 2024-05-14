@@ -12,11 +12,19 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
+      - name: Check connectivity
+        run: |
+          echo "Checking connectivity to RStudio Connect server..."
+          ping -c 4 137.75.93.22
+          nc -zv 137.75.93.22 443
+      
       - name: deploy
-        uses: MichaelAkridge-NOAA/actions/connect-publish@main
+        uses: rstudio/actions/connect-publish@main
         with:
           url: https://dev-connect.fisheries.noaa.gov/
-          api-key: ${{secrets.CONNECT_API_KEY }}
-          dir: |
-            ./app/NMFS_Color_Palettes_Explorer/
-          access-type: acl
+          api-key: ${{ secrets.CONNECT_API_KEY }}
+          dir: ./app/NMFS_Color_Palettes_Explorer/
+          access-type: logged_in
+          show-logs: true
+
