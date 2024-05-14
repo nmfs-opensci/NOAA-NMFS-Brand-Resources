@@ -11,11 +11,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
       - name: deploy
         uses: rstudio/actions/connect-publish@main
         with:
-          url: https://dev-connect.fisheries.noaa.gov/connect/
+          url: https://dev-connect.fisheries.noaa.gov/
           api-key: ${{secrets.CONNECT_API_KEY }}
           dir: |
             ./app/NMFS_Color_Palettes_Explorer/
