@@ -8,17 +8,11 @@ on:
 
 jobs:
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Check connectivity
-        run: |
-          echo "Checking connectivity to RStudio Connect server..."
-          ping -c 4 137.75.93.22
-          nc -zv 137.75.93.22 443
-      
       - name: deploy
         uses: rstudio/actions/connect-publish@main
         with:
@@ -27,4 +21,5 @@ jobs:
           dir: ./app/NMFS_Color_Palettes_Explorer/
           access-type: logged_in
           show-logs: true
+          update-env: true
 
