@@ -11,9 +11,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v5
+        uses: actions/checkout@v4
       - name: deploy
-        uses: rstudio/actions/connect-publish@main
+        uses: MichaelAkridge-NOAA/actions/connect-publish@main
         with:
           url: https://dev-connect.fisheries.noaa.gov/
           api-key: ${{secrets.CONNECT_API_KEY }}
