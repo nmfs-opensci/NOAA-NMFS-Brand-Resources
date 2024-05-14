@@ -16,7 +16,7 @@ jobs:
       - name: deploy
         uses: rstudio/actions/connect-publish@main
         with:
-          url: https://${{ secrets.CONNECT_API_KEY }}@dev-connect.fisheries.noaa.gov
+          url: https://${{ secrets.CONNECT_API_KEY }}@dev-connect.fisheries.noaa.gov/
           dir: ./app/NMFS_Color_Palettes_Explorer/
           require-vanity-path: true
           access-type: logged_in
