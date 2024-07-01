@@ -24,5 +24,5 @@ jobs:
         run: |
           set -x
           cd ./app/NMFS_Color_Palettes_Explorer/
-          rsconnect deploy streamlit --server https://test-connect.fisheries.noaa.gov/ --api-key $POSIT_CONNECT_API_KEY --timeout 900 ./
+          rsconnect deploy streamlit --server https://test-connect.fisheries.noaa.gov/ --api-key $POSIT_CONNECT_API_KEY app.py
 
