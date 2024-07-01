@@ -18,9 +18,13 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install rsconnect-python
+      - name: Test connectivity to Posit Connect server
+        run: |
+          curl -I https://test-connect.fisheries.noaa.gov/
       - name: Deploy to Posit Connect
         env:
           POSIT_CONNECT_API_KEY: ${{ secrets.TEST_CONNECT_API_KEY }}
         run: |
+          set -x
           cd ./app/NMFS_Color_Palettes_Explorer/
           rsconnect deploy streamlit --server https://test-connect.fisheries.noaa.gov/ --api-key $POSIT_CONNECT_API_KEY ./
