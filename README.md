@@ -25,6 +25,7 @@ A collection of color palettes, logos, and icons.
 <a href="https://connect.fisheries.noaa.gov/nmfs-color-explorer/" target="_blank">
   <img src="./app/s01.png" alt="screenshot">
 </a>
+- deployed via self hosted github runner
 
 ## Python 
 ### Python Package
