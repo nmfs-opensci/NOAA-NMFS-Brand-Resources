@@ -20,6 +20,6 @@ jobs:
           POSIT_CONNECT_API_KEY: ${{ secrets.TEST_CONNECT_API_KEY }}
         run: |
           cd ./app/NMFS_Color_Palettes_Explorer/
-          rsconnect deploy streamlit -v -i --server https://test-connect.fisheries.noaa.gov/ --api-key $POSIT_CONNECT_API_KEY ./ 
+          rsconnect deploy streamlit -v -i --server http://test-connect.fisheries.noaa.gov/ --api-key $POSIT_CONNECT_API_KEY ./ 
 
 
