@@ -13,8 +13,8 @@ jobs:
           python-version: '3.11.5'
       - name: Install rsconnect-python Dependencies
         run: |
-          apt-get update
-          apt-get install -y libssl-dev libcurl4-openssl-dev
+          sudo apt-get update
+          sudo apt-get install -y libssl-dev libcurl4-openssl-dev
       - name: Install rsconnect-python
         run: |
           python -m pip install --upgrade pip
