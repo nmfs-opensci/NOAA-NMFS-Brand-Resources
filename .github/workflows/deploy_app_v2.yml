@@ -1,4 +1,4 @@
-name: deploy app to test-positconnect v2
+name: GHR - v2 Deploy App to Posit Connect
 on:
   workflow_dispatch:
 jobs:
