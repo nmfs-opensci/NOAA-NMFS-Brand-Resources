@@ -28,5 +28,5 @@ jobs:
         uses: rstudio/actions/connect-publish@main
         with:
           url: ${{ secrets.CONNECT_URL }}
-          api-key: ${{ secrets.CONNECT_API_KEY }}
+          api-key: ${{ secrets.P_CONNECT_API }}
           dir: ./app/NMFS_Color_Palettes_Explorer/
