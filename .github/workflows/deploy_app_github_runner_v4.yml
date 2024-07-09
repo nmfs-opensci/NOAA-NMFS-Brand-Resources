@@ -27,6 +27,6 @@ jobs:
       - name: Publish Connect content
         uses: rstudio/actions/connect-publish@main
         with:
-          url: ${{ secrets.PROD_CONNECT_URL }}
-          api-key: ${{ secrets.PROD_CONNECT_API_KEY }}
+          url: ${{ secrets.CONNECT_URL }}
+          api-key: ${{ secrets.CONNECT_API_KEY }}
           dir: ./app/NMFS_Color_Palettes_Explorer/
