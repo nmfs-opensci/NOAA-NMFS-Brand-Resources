@@ -10,7 +10,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.x'
+          python-version: '3.11.5'
       - name: Install rsconnect-python
         run: |
           python -m pip install --upgrade pip
@@ -26,7 +26,8 @@ jobs:
           git push
       - name: Deploy to Posit Connect
         env:
-          POSIT_CONNECT_API_KEY: ${{ secrets.TEST_CONNECT_API_KEY }}
+          CONNECT_API_URL: ${{ secrets.CONNECT_URL }}
+          CONNECT_API_K: ${{ secrets.P_CONNECT_API }}
         run: |
           cd ./app/NMFS_Color_Palettes_Explorer/
-          rsconnect deploy streamlit --server https://test-connect.fisheries.noaa.gov/ --api-key $POSIT_CONNECT_API_KEY ./
+          rsconnect deploy streamlit --server $CONNECT_API_URL --api-key $CONNECT_API_K ./
