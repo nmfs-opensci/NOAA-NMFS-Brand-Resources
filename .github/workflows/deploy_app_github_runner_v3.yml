@@ -1,0 +1,32 @@
+name: GHR - v3 Deploy App to Posit Connect
+on:
+  workflow_dispatch:
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - name: Install rsconnect-python
+        run: |
+          python -m pip install --upgrade pip
+          pip install rsconnect-python
+      - name: Write Manifest
+        run: rsconnect write-manifest streamlit "./app/NMFS_Color_Palettes_Explorer" --overwrite
+      - name: Commit Manifest and Requirements.txt
+        run: |
+          git config --global user.email "action@github.com"
+          git config --global user.name "GitHub Action"
+          git add "./app/NMFS_Color_Palettes_Explorer/manifest.json" "./app/NMFS_Color_Palettes_Explorer/requirements.txt"
+          git commit -m "Automatically update manifest and requirements.txt" || echo "No changes to commit"
+          git push
+      - name: Deploy to Posit Connect
+        env:
+          POSIT_CONNECT_API_KEY: ${{ secrets.TEST_CONNECT_API_KEY }}
+        run: |
+          cd ./app/NMFS_Color_Palettes_Explorer/
+          rsconnect deploy streamlit --server https://test-connect.fisheries.noaa.gov/ --api-key $POSIT_CONNECT_API_KEY ./
