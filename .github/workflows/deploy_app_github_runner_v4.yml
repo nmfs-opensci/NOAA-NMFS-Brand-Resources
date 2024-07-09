@@ -1,4 +1,4 @@
-name: GHR - v3 Deploy App to Posit Connect
+name: GHR - v4 Deploy App to Posit Connect
 on:
   workflow_dispatch:
 jobs:
