@@ -1,0 +1,43 @@
+color:
+  palette:
+    noaa-dk-blue: "#0055A4"
+    noaa-lt-blue: "#0093D0"
+    navy: "#00467F"
+    white: "#ffffff"
+    gray-1: "#E8E8E8"
+    gray-2: "#D0D0D0"
+    gray-3: "#9A9A9A"
+    gray-4: "#7B7B7B"
+    gray-5: "#646464"
+    black: "#000000"
+    oceans-blue-1: "#0093D0"
+    oceans-blue-2: "#0055A4" 
+    oceans-blue-3: "#00467F"
+    waves-teal-1: "#1ECAD3"
+    waves-teal-2: "#008998"
+    waves-teal-3: "#007078"
+    seagrass-green-1: "#93D500"
+    seagrass-green-2: "#4C9C2E"
+    seagrass-green-3: "#007934"
+    urchin-purple-1: "#7F7FFF"
+    urchin-purple-2: "#625BC4"
+    urchin-purple-3: "#575195"
+    crustacean-orange-1: "#FF8300"
+    crustacean-orange-2: "#D65F00"
+    crustacean-orange-3: "#BC4700"
+    coral-red-1: "#FF4438"
+    coral-red-2: "#D02C2F"
+    coral-red-3: "#B2292E"
+  background: white
+  foreground: navy
+  primary: noaa-dk-blue
+
+logo: 
+  medium: images/noaa_emblem_logo-2022.png
+
+typography:
+  fonts:
+    - family: Inter
+      source: google
+  base: Inter
+  headings: Inter
