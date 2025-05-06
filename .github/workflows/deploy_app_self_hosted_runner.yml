@@ -1,4 +1,4 @@
-name: SHR - Deploy App to Posit Connect
+name: SHR - v2 Deploy App to Posit Connect
 on:
   workflow_dispatch:
 jobs:
@@ -18,8 +18,7 @@ jobs:
       - name: Deploy to Posit Connect
         env:
           POSIT_CONNECT_API_KEY: ${{ secrets.TEST_CONNECT_API_KEY }}
+          POSIT_CONNECT_URL: ${{ secrets.POSIT_CONNECT_URL }}
         run: |
           cd ./app/NMFS_Color_Palettes_Explorer/
-          rsconnect deploy streamlit -v -i --server https://test-connect.fisheries.noaa.gov/ --api-key $POSIT_CONNECT_API_KEY ./ 
-
-
+          rsconnect deploy streamlit -v --server $POSIT_CONNECT_URL --api-key $POSIT_CONNECT_API_KEY ./ 
