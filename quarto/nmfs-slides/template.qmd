@@ -4,6 +4,7 @@ format:
   nmfs-slides-revealjs: default
 author: Jonathan Peake - NOAA
 date: last-modified
+brand: _extensions/nmfs-opensci/nmfs-brand/_brand.yml
 ---
 
 ## Introduction
@@ -13,4 +14,3 @@ date: last-modified
 ## More Information
 
 You can learn more about controlling the appearance of RevealJS output here: <https://quarto.org/docs/presentations/revealjs/>
-
