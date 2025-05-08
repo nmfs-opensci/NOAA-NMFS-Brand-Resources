@@ -1,8 +1,77 @@
 /*-- scss:defaults --*/
-
+$dark-bg-text-color: #E9F3F6;
+$light-bg-text-color: #002364;
+$presentation-h1-font-size: 1.75em;
 /* TODO: Customize presentation appearance by setting SCSS variables */
 /* See https://quarto.org/docs/presentations/revealjs/themes.html#customizing-themes */
 
 /*-- scss:rules --*/
+// Slide numbers to the bottom-left
+.slide-number, .reveal.has-logo .slide-number {
+    bottom: 14px !important;
+    left: 50px !important;
+    top: unset !important;
+  }
+.reveal .slide-number > a[href*='title-slide'] {
+    display: none;
+  }
+
+#title-slide.quarto-title-block {
+    transform: translate(0, 20%);
+    height: 60%;
+    min-height: 60%;
+    display: block grid !important;
+}
+
+#title-slide .title{
+    margin-bottom: 0;
+    max-width: 80%;
+    position: relative;
+    left: 200px;
+    text-align: left;
+    line-height: 1.1em;
+    margin-bottom: 0;
+}
+
+#title-slide .subtitle{
+    margin-bottom: 1rem;
+    max-width: 70%;
+    position: relative;
+    // top: 150px;
+    left: 200px;
+    text-align: left;
+    font-size: 1.1em;
+    line-height: 1.1em;
+    text-wrap: balance;
+}
+
+#title-slide .quarto-title-authors {
+    max-width: 100%;
+    position: relative;
+    // top: 150px;
+    right: 0;
+    text-align: right;
+    text-wrap: balance;
+    display: block;
+    object-position: right;
+
+}
+
+#title-slide .quarto-title-author {
+    position: relative;
+    padding-left: 0em;
+    padding-right: 0em;
+    left: 40%;
+    max-width: 60%;
+
+}
+
+#title-slide .date {
+    position: relative;
+    // top: 150px;
+    text-align: right;
+    font-size: .9em;
+}
+
 
 /* TODO: Provide custom CSS rules */
