@@ -4,7 +4,7 @@ subtitle: Using quarto to build a branded slide presentation
 author: John Doe
 institute: NMFS Open Science
 date: last-modified
-brand: _brand.yml
+brand: dark_brand.yml
 format:
   nmfs-slides-revealjs: 
     title-slide-attributes:

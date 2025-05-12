@@ -17,6 +17,7 @@ contributes:
       format-resources:
         - _extensions/nmfs-opensci/nmfs-brand/_brand.yml
         - _extensions/nmfs-opensci/nmfs-brand/logos
+        - _extensions/nmfs-opensci/nmfs-brand/dark_brand.yml
 
       
 
