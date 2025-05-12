@@ -7,6 +7,7 @@ contributes:
     revealjs:
       theme: 
         - custom.scss
+        - brand
       title-slide-attributes:
         data-background-image: swoop-styles/swoop-1.png
         data-background-color: '{{< brand color noaa-sea >}}'
