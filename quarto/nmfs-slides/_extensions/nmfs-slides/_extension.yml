@@ -10,8 +10,8 @@ contributes:
       title-slide-attributes:
         data-background-image: swoop-styles/swoop-1.png
         data-background-color: '{{< brand color noaa-sea >}}'
-        data-background-size: contain
-        data-background-position: left
+        data-background-size: contain, cover
+        data-background-position: left, center
       date-format: long
       slide-number: h.v
       format-resources:
