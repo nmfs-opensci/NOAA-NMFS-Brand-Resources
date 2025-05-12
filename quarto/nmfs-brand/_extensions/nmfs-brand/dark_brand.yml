@@ -114,8 +114,8 @@ color:
     purple: urchin
     teal: fisheries-teal
     white: gull-white
-  background: gull-white
-  foreground: dark-navy
+  background: dark-navy
+  foreground: dove-gray-tint-2
   primary: noaa-sea
 
 logo: 
@@ -228,4 +228,4 @@ typography:
   base: Open Sans
   headings: 
     family: Open Sans
-    color: dark-teal
+    color: pale-teal
