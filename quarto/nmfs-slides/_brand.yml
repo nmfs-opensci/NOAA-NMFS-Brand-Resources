@@ -114,9 +114,12 @@ color:
     purple: urchin
     teal: fisheries-teal
     white: gull-white
-  background: dark-navy
-  foreground: dove-gray-tint-2
-  primary: noaa-sea
+
+    ## Fisheries slides dark blue
+    dark-blue: "#003155"
+  # background: gull-white
+  # foreground: dark-navy
+  # primary: noaa-sea
 
 logo: 
   images: 
@@ -228,4 +231,4 @@ typography:
   base: Open Sans
   headings: 
     family: Open Sans
-    color: pale-teal
+    color: dark-teal

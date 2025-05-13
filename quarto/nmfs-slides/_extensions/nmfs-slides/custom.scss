@@ -5,6 +5,8 @@ $data-background-image: url("/styles/bottom-swoop-teal.png");
 $data-background-size: contain;
 $data-background-repeat: no-repeat;
 $data-background-position: bottom;
+$dark-bg-text-color: $brand-sky-tint-3;
+$light-bg-text-color: $brand-dark-navy;
 
 /* TODO: Customize presentation appearance by setting SCSS variables */
 /* See https://quarto.org/docs/presentations/revealjs/themes.html#customizing-themes */

@@ -4,7 +4,7 @@ subtitle: Using quarto to build a branded slide presentation
 author: John Doe
 institute: NMFS Open Science
 date: last-modified
-brand: dark_brand.yml
+brand: slides_light_brand.yml
 format:
   nmfs-slides-revealjs: 
     title-slide-attributes:
@@ -13,6 +13,10 @@ format:
     footer: "U.S. Department of Commerce | National Oceanic and Atmospheric Administration | National Marine Fisheries Service"
     controls: true
     navigation-mode: linear
+    transition: slide
+    transition-speed: default
+    background-transition: none
+    scrollable: true
 ---
 
 ## How to use this template {.content-double-swoop}
@@ -64,23 +68,23 @@ date: last-modified
 ``` {.yaml code-line-numbers="6"}
 title: NOAA Fisheries revealjs Presentation Template
 subtitle: Using quarto to build a branded slide presentation
-author: John Doe
+author: John Doe 
 institute: NMFS Open Science
 date: last-modified
-brand: _brand.yml
+brand: slides_dark_brand.yml
 ```
 
 `brand`: file for NOAA branding metadata
 
 ## YAML keys {.content-double-swoop auto-animate="true"}
 
-``` {.yaml code-line-numbers="6-7"}
+``` {.yaml code-line-numbers="7-8"}
 title: NOAA Fisheries revealjs Presentation Template
 subtitle: Using quarto to build a branded slide presentation
-author: John Doe
+author: John Doe 
 institute: NMFS Open Science
 date: last-modified
-brand: _brand.yml
+brand: slides_dark_brand.yml
 format:
   nmfs-slides-revealjs: 
 ```
@@ -89,13 +93,13 @@ format:
 
 ## YAML keys {.content-double-swoop auto-animate="true"}
 
-``` {.yaml code-line-numbers="8-10"}
+``` {.yaml code-line-numbers="9-11"}
 title: NOAA Fisheries revealjs Presentation Template
 subtitle: Using quarto to build a branded slide presentation
-author: John Doe
+author: John Doe 
 institute: NMFS Open Science
 date: last-modified
-brand: _brand.yml
+brand: slides_dark_brand.yml
 format:
   nmfs-slides-revealjs: 
       title-slide-attributes:
@@ -107,13 +111,13 @@ format:
 
 ## YAML keys {.content-double-swoop auto-animate="true"}
 
-``` {.yaml code-line-numbers="11"}
+``` {.yaml code-line-numbers="12"}
 title: NOAA Fisheries revealjs Presentation Template
 subtitle: Using quarto to build a branded slide presentation
-author: John Doe
+author: John Doe 
 institute: NMFS Open Science
 date: last-modified
-brand: _brand.yml
+brand: slides_dark_brand.yml
 format:
   nmfs-slides-revealjs: 
       title-slide-attributes:
@@ -126,13 +130,13 @@ format:
 
 ## YAML keys {.content-double-swoop auto-animate="true"}
 
-``` {.yaml code-line-numbers="12"}
+``` {.yaml code-line-numbers="13"}
 title: NOAA Fisheries revealjs Presentation Template
 subtitle: Using quarto to build a branded slide presentation
-author: John Doe
+author: John Doe 
 institute: NMFS Open Science
 date: last-modified
-brand: _brand.yml
+brand: slides_dark_brand.yml
 format:
   nmfs-slides-revealjs: 
       title-slide-attributes:
@@ -146,13 +150,13 @@ format:
 
 ## YAML keys {.content-double-swoop auto-animate="true"}
 
-``` {.yaml code-line-numbers="13"}
+``` {.yaml code-line-numbers="14"}
 title: NOAA Fisheries revealjs Presentation Template
 subtitle: Using quarto to build a branded slide presentation
-author: John Doe
+author: John Doe 
 institute: NMFS Open Science
 date: last-modified
-brand: _brand.yml
+brand: slides_dark_brand.yml
 format:
   nmfs-slides-revealjs: 
       title-slide-attributes:
@@ -164,6 +168,78 @@ format:
 ```
 
 `navigation-mode`: `linear`, `vertical`, or `grid`, controls arrow key behavior
+
+## YAML keys {.content-double-swoop auto-animate="true"}
+
+``` {.yaml code-line-numbers="15-16"}
+title: NOAA Fisheries revealjs Presentation Template
+subtitle: Using quarto to build a branded slide presentation
+author: John Doe 
+institute: NMFS Open Science
+date: last-modified
+brand: slides_dark_brand.yml
+format:
+  nmfs-slides-revealjs: 
+      title-slide-attributes:
+        data-background-image: "styles/horiz-swoop-1.png, styles/background.jpg"
+        data-background-color: '{{< brand color dark-blue >}}'
+      footer: "U.S. Department of Commerce | National Oceanic and Atmospheric Administration | National Marine Fisheries Service"
+      controls: true
+      navigation-mode: linear
+      transition: slide
+      transition-speed: default
+```
+
+`transition`: control transitions between slides and animation speed
+
+## YAML keys {.content-double-swoop auto-animate="true"}
+
+``` {.yaml code-line-numbers="17"}
+title: NOAA Fisheries revealjs Presentation Template
+subtitle: Using quarto to build a branded slide presentation
+author: John Doe 
+institute: NMFS Open Science
+date: last-modified
+brand: slides_dark_brand.yml
+format:
+  nmfs-slides-revealjs: 
+      title-slide-attributes:
+        data-background-image: "styles/horiz-swoop-1.png, styles/background.jpg"
+        data-background-color: '{{< brand color dark-blue >}}'
+      footer: "U.S. Department of Commerce | National Oceanic and Atmospheric Administration | National Marine Fisheries Service"
+      controls: true
+      navigation-mode: linear
+      transition: slide
+      transition-speed: default
+      background-transition: none
+```
+
+`background-transition`: separately control background transitions
+
+## YAML keys {.content-double-swoop auto-animate="true"}
+
+``` {.yaml code-line-numbers="18"}
+title: NOAA Fisheries revealjs Presentation Template
+subtitle: Using quarto to build a branded slide presentation
+author: John Doe 
+institute: NMFS Open Science
+date: last-modified
+brand: slides_dark_brand.yml
+format:
+  nmfs-slides-revealjs: 
+      title-slide-attributes:
+        data-background-image: "styles/horiz-swoop-1.png, styles/background.jpg"
+        data-background-color: '{{< brand color dark-blue >}}'
+      footer: "U.S. Department of Commerce | National Oceanic and Atmospheric Administration | National Marine Fisheries Service"
+      controls: true
+      navigation-mode: linear
+      transition: slide
+      transition-speed: default
+      background-transition: none
+      scrollable: true
+```
+
+`scrollable`: enable scrolling on a slide when content overflows
 
 # Content slides {.divider}
 
@@ -177,24 +253,30 @@ Note the small noaa logo
 
 Example slide for main content showcasing NOAA's swoop in the footer
 
-Adds the `.swoop-footer` class to the header
+Adds the `.content-swoop` class to the header
 
 ## Content slides: teal swoop footer {.content-swoop-teal}
 
 Example slide for main content showcasing NOAA's swoop in the footer with a teal runner
 
-Adds the `.teal-swoop-footer` class to the header
+Adds the `.content-swoop-teal` class to the header
 
 ## Content slides: navy swoop footer {.content-swoop-navy}
 
 Example slide for main content showcasing NOAA's swoop in the footer with a navy runner
 
-Adds the `.navy-swoop-footer` class to the header
+Adds the `.content-swoop-navy` class to the header
 
 ## Content slides: double swoop footer {.content-double-swoop}
 
 Example slide for main content showcasing NOAA's horizontally-oriented swoop footer
 
-Adds the `.double-swoop-footer` class to the header
+Adds the `.content-double-swoop` class to the header
 
 # Divider slides {.divider}
+
+Used to divide sections
+
+Denoted by a first-level heading (`# Heading`)
+
+Adding the `.divider` class to the header adds the left and right swoops
