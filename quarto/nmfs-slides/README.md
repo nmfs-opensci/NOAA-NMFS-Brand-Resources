@@ -2,8 +2,6 @@
 
 ## Installing
 
-*TODO*: Replace the `<github-organization>` with your GitHub organization.
-
 ```bash
 quarto use template nmfs-opensci/noaa-nmfs-brand-resources/quarto/nmfs-slides
 ```
