@@ -8,9 +8,7 @@
 quarto use template nmfs-opensci/noaa-nmfs-brand-resources/quarto/nmfs-slides
 ```
 
-This will install the extension and create an example qmd file that you can use as a starting place for your article.
-
-<iframe class="slide-deck" src="template.html" width="900" height="600">
+This will install the extension and create an example qmd file that you can use as a starting place for your slide deck.
 
 <!-- ## Using
 
