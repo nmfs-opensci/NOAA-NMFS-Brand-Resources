@@ -114,11 +114,6 @@ color:
     purple: urchin
     teal: fisheries-teal
     white: gull-white
-
-    ## Slide background colors from PPT templates
-    dark-blue: '#003155'
-    light-teal: "#13B9C2"
-
   background: gull-white
   foreground: dark-navy
   primary: noaa-sea
