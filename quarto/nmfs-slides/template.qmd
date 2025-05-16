@@ -8,7 +8,7 @@ brand: slides_light_brand.yml
 format:
   nmfs-slides-revealjs: 
     title-slide-attributes:
-      data-background-image: "styles/horiz-swoop-1.png, styles/background.jpg"
+      data-background-image: "styles/horiz-swoop-1.png"
       data-background-color: '{{< brand color dark-blue >}}'
     footer: "U.S. Department of Commerce | National Oceanic and Atmospheric Administration | National Marine Fisheries Service"
     controls: true
@@ -21,15 +21,15 @@ format:
 
 ## How to use this template {.content-double-swoop}
 
-This template is split into three sections
+This Quarto file is both a guide and a template
 
--   Title slide formatting
+Two ways to use the template:
 
--   Content slide formatting
+-   Make a new Quarto file and use the sections of this template to add content
 
--   Dividers formatting
+-   Make a copy of the template file and edit directly to reflect your content
 
-# Title slide formatting {.divider}
+# General formatting {.divider}
 
 ## YAML keys {.content-double-swoop auto-animate="true"}
 
@@ -71,7 +71,7 @@ subtitle: Using quarto to build a branded slide presentation
 author: John Doe 
 institute: NMFS Open Science
 date: last-modified
-brand: slides_dark_brand.yml
+brand: slides_light_brand.yml
 ```
 
 `brand`: file for NOAA branding metadata
@@ -104,7 +104,7 @@ format:
   nmfs-slides-revealjs: 
       title-slide-attributes:
         data-background-image: "styles/horiz-swoop-1.png, styles/background.jpg"
-        data-background-color: '{{< brand color dark-blue >}}'
+        data-background-color: '{{{< brand color dark-blue >}}}'
 ```
 
 `title-slide-attributes`: place to change background image and color just on the title slide
@@ -122,7 +122,7 @@ format:
   nmfs-slides-revealjs: 
       title-slide-attributes:
         data-background-image: "styles/horiz-swoop-1.png, styles/background.jpg"
-        data-background-color: '{{< brand color dark-blue >}}'
+        data-background-color: '{{{< brand color dark-blue >}}}'
       footer: "U.S. Department of Commerce | National Oceanic and Atmospheric Administration | National Marine Fisheries Service"
 ```
 
@@ -141,7 +141,7 @@ format:
   nmfs-slides-revealjs: 
       title-slide-attributes:
         data-background-image: "styles/horiz-swoop-1.png, styles/background.jpg"
-        data-background-color: '{{< brand color dark-blue >}}'
+        data-background-color: '{{{< brand color dark-blue >}}}'
       footer: "U.S. Department of Commerce | National Oceanic and Atmospheric Administration | National Marine Fisheries Service"
       controls: true
 ```
@@ -161,7 +161,7 @@ format:
   nmfs-slides-revealjs: 
       title-slide-attributes:
         data-background-image: "styles/horiz-swoop-1.png, styles/background.jpg"
-        data-background-color: '{{< brand color dark-blue >}}'
+        data-background-color: '{{{< brand color dark-blue >}}}'
       footer: "U.S. Department of Commerce | National Oceanic and Atmospheric Administration | National Marine Fisheries Service"
       controls: true
       navigation-mode: linear
@@ -182,7 +182,7 @@ format:
   nmfs-slides-revealjs: 
       title-slide-attributes:
         data-background-image: "styles/horiz-swoop-1.png, styles/background.jpg"
-        data-background-color: '{{< brand color dark-blue >}}'
+        data-background-color: '{{{< brand color dark-blue >}}}'
       footer: "U.S. Department of Commerce | National Oceanic and Atmospheric Administration | National Marine Fisheries Service"
       controls: true
       navigation-mode: linear
@@ -205,7 +205,7 @@ format:
   nmfs-slides-revealjs: 
       title-slide-attributes:
         data-background-image: "styles/horiz-swoop-1.png, styles/background.jpg"
-        data-background-color: '{{< brand color dark-blue >}}'
+        data-background-color: '{{{< brand color dark-blue >}}}'
       footer: "U.S. Department of Commerce | National Oceanic and Atmospheric Administration | National Marine Fisheries Service"
       controls: true
       navigation-mode: linear
@@ -229,7 +229,7 @@ format:
   nmfs-slides-revealjs: 
       title-slide-attributes:
         data-background-image: "styles/horiz-swoop-1.png, styles/background.jpg"
-        data-background-color: '{{< brand color dark-blue >}}'
+        data-background-color: '{{{< brand color dark-blue >}}}'
       footer: "U.S. Department of Commerce | National Oceanic and Atmospheric Administration | National Marine Fisheries Service"
       controls: true
       navigation-mode: linear
@@ -241,6 +241,80 @@ format:
 
 `scrollable`: enable scrolling on a slide when content overflows
 
+## Light and dark themes {.content-double-swoop}
+
+Two color schemes following NMFS branding guidelines
+
+::: {layout-ncol="2"}
+![`brand: slides_light_brand.yml`](images/paste-3.png)
+
+![`brand: slides_dark_brand.yml`](images/paste-2.png)
+:::
+
+## Customizing the title slide {.content-double-swoop}
+
+Background and swoop types can be changed
+
+In the YAML header under `title-slide-attributes`:
+
+-   `data-background-image` controls the swoop type and whether to include a background image
+
+-   `data-background-color` controls the background color of the title slide if no background image is used
+
+## Customizing the title slide {.content-double-swoop}
+
+### Swoop type
+
+``` yaml
+data-background-image: "[Swoop Path]"
+```
+
+::: {layout-ncol="2"}
+![Horizontal (`styles/horiz-swoop.png`)](images/paste-10.png){fig-align="left" width="90%"}
+
+![Vertical (`styles/horiz-swoop.png`)](images/paste-11.png){fig-align="left" width="90%"}
+:::
+
+## Customizing the title slide {.content-double-swoop}
+
+### Background image
+
+``` yaml
+data-background-image: "[Swoop Path], [Background Path]"
+data-background-image: "styles/horiz-swoop-1.png, styles/background.jpg"
+```
+
+![](images/paste-8.png){fig-align="center"}
+
+## Customizing the title slide {.content-double-swoop}
+
+### Background image
+
+``` yaml
+data-background-image: "[Swoop Path], [Background Path]"
+data-background-color: "{{{< brand color dark-blue >}}}"
+```
+
+::: callout-important
+If using a background image that's different from your theme (i.e., dark background in light theme, light background in dark theme), make sure to also change the `data-background-color` field to match the background so Quarto knows to use a contrasting font color
+:::
+
+## Customizing the title slide {.content-double-swoop}
+
+### Background color
+
+For [brand colors](_brand.yml) use `{{{< brand color [COLOR] >}}}`
+
+``` yaml
+data-background-color: "{{{< brand color [COLOR] >}}}"
+```
+
+::: {layout-ncol="2"}
+![`{{{< brand color dark-blue >}}}`](images/paste-16.png){fig-align="left" width="85%"}
+
+![`{{{< brand color fisheries-teal >}}}`](images/paste-15.png){fig-align="left" width="85%"}
+:::
+
 # Content slides {.divider}
 
 ## Content slides: no swoop
@@ -249,29 +323,39 @@ Example slide for main content showcasing with no swoop on the footer
 
 Note the small noaa logo
 
-## Content slides: swoop footer {.content-swoop}
+## Content slides: swoop, no runner {.content-swoop}
 
 Example slide for main content showcasing NOAA's swoop in the footer
 
 Adds the `.content-swoop` class to the header
 
-## Content slides: teal swoop footer {.content-swoop-teal}
+## Content slides: swoop, teal runner {.content-swoop-teal}
 
 Example slide for main content showcasing NOAA's swoop in the footer with a teal runner
 
 Adds the `.content-swoop-teal` class to the header
 
-## Content slides: navy swoop footer {.content-swoop-navy}
+## Content slides: swoop, navy runner {.content-swoop-navy}
 
 Example slide for main content showcasing NOAA's swoop in the footer with a navy runner
 
 Adds the `.content-swoop-navy` class to the header
 
-## Content slides: double swoop footer {.content-double-swoop}
+## Content slides: double swoop {.content-double-swoop}
 
 Example slide for main content showcasing NOAA's horizontally-oriented swoop footer
 
 Adds the `.content-double-swoop` class to the header
+
+## Changing the background color of a single slide {.content-double-swoop background-color="#005E5E"}
+
+Add `{background-color=[ColorHexCode]}` to the slide header
+
+Heading and body text colors are changed to a contrasting color
+
+::: callout-note
+Brand color names currently are not supported in slide attributes. Reference [\_brand.yml](_brand.yml) for brand color hex codes.
+:::
 
 # Divider slides {.divider}
 

@@ -1,10 +1,6 @@
 /*-- scss:defaults --*/
 
 $presentation-h1-font-size: 1.75em;
-$data-background-image: url("/styles/bottom-swoop-teal.png");
-$data-background-size: contain;
-$data-background-repeat: no-repeat;
-$data-background-position: bottom;
 $dark-bg-text-color: $brand-sky-tint-3;
 $light-bg-text-color: $brand-dark-navy;
 
@@ -23,7 +19,7 @@ $light-bg-text-color: $brand-dark-navy;
     font-size: 0.5em;
 }
 
-.reveal .slide-number > a[href*='title-slide'] {
+.reveal .slide-number > a[href*='/title-slide'] {
     display: none;
 }
 
@@ -139,4 +135,9 @@ body:has(.present.quarto-title-block)  {
 
 .slide-menu-button {
     display: var(--slide-menu-display, block) !important;
+}
+
+
+.reveal h3 {
+    color: $brand-h3
 }

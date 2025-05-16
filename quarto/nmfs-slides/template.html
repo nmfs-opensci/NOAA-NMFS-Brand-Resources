@@ -10,7 +10,7 @@
   <meta name="generator" content="quarto-1.7.29">
 
   <meta name="author" content="John Doe">
-  <meta name="dcterms.date" content="2025-05-13">
+  <meta name="dcterms.date" content="2025-05-16">
   <title>NOAA Fisheries revealjs Presentation Template</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -96,7 +96,7 @@
     code span.vs { color: #20794d; } /* VerbatimString */
     code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
-  <link rel="stylesheet" href="template_files/libs/revealjs/dist/theme/quarto-d24b06c26646623eb03843838d1320df.css">
+  <link rel="stylesheet" href="template_files/libs/revealjs/dist/theme/quarto-4fee3ef827660ca1bc175ed105c1278e.css">
   <link href="template_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="template_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="template_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -194,7 +194,7 @@
   <div class="reveal">
     <div class="slides">
 
-<section id="title-slide" data-background-color="#003155" data-background-image="styles/horiz-swoop-1.png, styles/background.jpg" data-background-position="left, center" data-background-size="contain, cover" class="quarto-title-block center">
+<section id="title-slide" data-background-color="#003155" data-background-image="styles/horiz-swoop-1.png" data-background-position="left, center" data-background-size="contain, cover" class="quarto-title-block center">
   <h1 class="title">NOAA Fisheries revealjs Presentation Template</h1>
   <p class="subtitle">Using quarto to build a branded slide presentation</p>
 
@@ -209,20 +209,20 @@ John Doe
     </div>
 </div>
 
-  <p class="date">May 13, 2025</p>
+  <p class="date">May 16, 2025</p>
 </section>
 <section id="how-to-use-this-template" class="slide level2 content-double-swoop">
 <h2>How to use this template</h2>
-<p>This template is split into three sections</p>
+<p>This Quarto file is both a guide and a template</p>
+<p>Two ways to use the template:</p>
 <ul>
-<li><p>Title slide formatting</p></li>
-<li><p>Content slide formatting</p></li>
-<li><p>Dividers formatting</p></li>
+<li><p>Make a new Quarto file and use the sections of this template to add content</p></li>
+<li><p>Make a copy of the template file and edit directly to reflect your content</p></li>
 </ul>
 </section>
 <section>
-<section id="title-slide-formatting" class="title-slide slide level1 divider center">
-<h1>Title slide formatting</h1>
+<section id="general-formatting" class="title-slide slide level1 divider center">
+<h1>General formatting</h1>
 
 </section>
 <section id="yaml-keys" class="slide level2 content-double-swoop" data-auto-animate="true">
@@ -255,7 +255,7 @@ John Doe
 <span id="cb4-3" class="hljs-ln-code"><a href=""></a><span class="fu">author</span><span class="kw">:</span><span class="at"> John Doe </span></span>
 <span id="cb4-4" class="hljs-ln-code"><a href=""></a><span class="fu">institute</span><span class="kw">:</span><span class="at"> NMFS Open Science</span></span>
 <span id="cb4-5" class="hljs-ln-code"><a href=""></a><span class="fu">date</span><span class="kw">:</span><span class="at"> last-modified</span></span>
-<span id="cb4-6" class="hljs-ln-code"><a href=""></a><span class="fu">brand</span><span class="kw">:</span><span class="at"> slides_dark_brand.yml</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb4-6" class="hljs-ln-code"><a href=""></a><span class="fu">brand</span><span class="kw">:</span><span class="at"> slides_light_brand.yml</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><code>brand</code>: file for NOAA branding metadata</p>
 </section>
 <section id="yaml-keys-4" class="slide level2 content-double-swoop" data-auto-animate="true">
@@ -282,7 +282,7 @@ John Doe
 <span id="cb6-8" class="hljs-ln-code"><a href=""></a><span class="at">  </span><span class="fu">nmfs-slides-revealjs</span><span class="kw">:</span><span class="at"> </span></span>
 <span id="cb6-9" class="hljs-ln-code"><a href=""></a><span class="at">      </span><span class="fu">title-slide-attributes</span><span class="kw">:</span></span>
 <span id="cb6-10" class="hljs-ln-code"><a href=""></a><span class="at">        </span><span class="fu">data-background-image</span><span class="kw">:</span><span class="at"> </span><span class="st">"styles/horiz-swoop-1.png, styles/background.jpg"</span></span>
-<span id="cb6-11" class="hljs-ln-code"><a href=""></a><span class="at">        </span><span class="fu">data-background-color</span><span class="kw">:</span><span class="at"> </span><span class="st">'#003155'</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb6-11" class="hljs-ln-code"><a href=""></a><span class="at">        </span><span class="fu">data-background-color</span><span class="kw">:</span><span class="at"> </span><span class="st">'{{&lt; brand color dark-blue &gt;}}'</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><code>title-slide-attributes</code>: place to change background image and color just on the title slide</p>
 </section>
 <section id="yaml-keys-6" class="slide level2 content-double-swoop" data-auto-animate="true">
@@ -297,7 +297,7 @@ John Doe
 <span id="cb7-8" class="hljs-ln-code"><a href=""></a><span class="at">  </span><span class="fu">nmfs-slides-revealjs</span><span class="kw">:</span><span class="at"> </span></span>
 <span id="cb7-9" class="hljs-ln-code"><a href=""></a><span class="at">      </span><span class="fu">title-slide-attributes</span><span class="kw">:</span></span>
 <span id="cb7-10" class="hljs-ln-code"><a href=""></a><span class="at">        </span><span class="fu">data-background-image</span><span class="kw">:</span><span class="at"> </span><span class="st">"styles/horiz-swoop-1.png, styles/background.jpg"</span></span>
-<span id="cb7-11" class="hljs-ln-code"><a href=""></a><span class="at">        </span><span class="fu">data-background-color</span><span class="kw">:</span><span class="at"> </span><span class="st">'#003155'</span></span>
+<span id="cb7-11" class="hljs-ln-code"><a href=""></a><span class="at">        </span><span class="fu">data-background-color</span><span class="kw">:</span><span class="at"> </span><span class="st">'{{&lt; brand color dark-blue &gt;}}'</span></span>
 <span id="cb7-12" class="hljs-ln-code"><a href=""></a><span class="at">      </span><span class="fu">footer</span><span class="kw">:</span><span class="at"> </span><span class="st">"U.S. Department of Commerce | National Oceanic and Atmospheric Administration | National Marine Fisheries Service"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><code>footer</code>: standard NOAA Fisheries footer, shown on every slide except title slide</p>
 </section>
@@ -313,7 +313,7 @@ John Doe
 <span id="cb8-8" class="hljs-ln-code"><a href=""></a><span class="at">  </span><span class="fu">nmfs-slides-revealjs</span><span class="kw">:</span><span class="at"> </span></span>
 <span id="cb8-9" class="hljs-ln-code"><a href=""></a><span class="at">      </span><span class="fu">title-slide-attributes</span><span class="kw">:</span></span>
 <span id="cb8-10" class="hljs-ln-code"><a href=""></a><span class="at">        </span><span class="fu">data-background-image</span><span class="kw">:</span><span class="at"> </span><span class="st">"styles/horiz-swoop-1.png, styles/background.jpg"</span></span>
-<span id="cb8-11" class="hljs-ln-code"><a href=""></a><span class="at">        </span><span class="fu">data-background-color</span><span class="kw">:</span><span class="at"> </span><span class="st">'#003155'</span></span>
+<span id="cb8-11" class="hljs-ln-code"><a href=""></a><span class="at">        </span><span class="fu">data-background-color</span><span class="kw">:</span><span class="at"> </span><span class="st">'{{&lt; brand color dark-blue &gt;}}'</span></span>
 <span id="cb8-12" class="hljs-ln-code"><a href=""></a><span class="at">      </span><span class="fu">footer</span><span class="kw">:</span><span class="at"> </span><span class="st">"U.S. Department of Commerce | National Oceanic and Atmospheric Administration | National Marine Fisheries Service"</span></span>
 <span id="cb8-13" class="hljs-ln-code"><a href=""></a><span class="at">      </span><span class="fu">controls</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><code>controls</code>: defaults to true; adds arrow buttons at edges of slides</p>
@@ -330,7 +330,7 @@ John Doe
 <span id="cb9-8" class="hljs-ln-code"><a href=""></a><span class="at">  </span><span class="fu">nmfs-slides-revealjs</span><span class="kw">:</span><span class="at"> </span></span>
 <span id="cb9-9" class="hljs-ln-code"><a href=""></a><span class="at">      </span><span class="fu">title-slide-attributes</span><span class="kw">:</span></span>
 <span id="cb9-10" class="hljs-ln-code"><a href=""></a><span class="at">        </span><span class="fu">data-background-image</span><span class="kw">:</span><span class="at"> </span><span class="st">"styles/horiz-swoop-1.png, styles/background.jpg"</span></span>
-<span id="cb9-11" class="hljs-ln-code"><a href=""></a><span class="at">        </span><span class="fu">data-background-color</span><span class="kw">:</span><span class="at"> </span><span class="st">'#003155'</span></span>
+<span id="cb9-11" class="hljs-ln-code"><a href=""></a><span class="at">        </span><span class="fu">data-background-color</span><span class="kw">:</span><span class="at"> </span><span class="st">'{{&lt; brand color dark-blue &gt;}}'</span></span>
 <span id="cb9-12" class="hljs-ln-code"><a href=""></a><span class="at">      </span><span class="fu">footer</span><span class="kw">:</span><span class="at"> </span><span class="st">"U.S. Department of Commerce | National Oceanic and Atmospheric Administration | National Marine Fisheries Service"</span></span>
 <span id="cb9-13" class="hljs-ln-code"><a href=""></a><span class="at">      </span><span class="fu">controls</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
 <span id="cb9-14" class="hljs-ln-code"><a href=""></a><span class="at">      </span><span class="fu">navigation-mode</span><span class="kw">:</span><span class="at"> linear</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -348,7 +348,7 @@ John Doe
 <span id="cb10-8" class="hljs-ln-code"><a href=""></a><span class="at">  </span><span class="fu">nmfs-slides-revealjs</span><span class="kw">:</span><span class="at"> </span></span>
 <span id="cb10-9" class="hljs-ln-code"><a href=""></a><span class="at">      </span><span class="fu">title-slide-attributes</span><span class="kw">:</span></span>
 <span id="cb10-10" class="hljs-ln-code"><a href=""></a><span class="at">        </span><span class="fu">data-background-image</span><span class="kw">:</span><span class="at"> </span><span class="st">"styles/horiz-swoop-1.png, styles/background.jpg"</span></span>
-<span id="cb10-11" class="hljs-ln-code"><a href=""></a><span class="at">        </span><span class="fu">data-background-color</span><span class="kw">:</span><span class="at"> </span><span class="st">'#003155'</span></span>
+<span id="cb10-11" class="hljs-ln-code"><a href=""></a><span class="at">        </span><span class="fu">data-background-color</span><span class="kw">:</span><span class="at"> </span><span class="st">'{{&lt; brand color dark-blue &gt;}}'</span></span>
 <span id="cb10-12" class="hljs-ln-code"><a href=""></a><span class="at">      </span><span class="fu">footer</span><span class="kw">:</span><span class="at"> </span><span class="st">"U.S. Department of Commerce | National Oceanic and Atmospheric Administration | National Marine Fisheries Service"</span></span>
 <span id="cb10-13" class="hljs-ln-code"><a href=""></a><span class="at">      </span><span class="fu">controls</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
 <span id="cb10-14" class="hljs-ln-code"><a href=""></a><span class="at">      </span><span class="fu">navigation-mode</span><span class="kw">:</span><span class="at"> linear</span></span>
@@ -368,7 +368,7 @@ John Doe
 <span id="cb11-8" class="hljs-ln-code"><a href=""></a><span class="at">  </span><span class="fu">nmfs-slides-revealjs</span><span class="kw">:</span><span class="at"> </span></span>
 <span id="cb11-9" class="hljs-ln-code"><a href=""></a><span class="at">      </span><span class="fu">title-slide-attributes</span><span class="kw">:</span></span>
 <span id="cb11-10" class="hljs-ln-code"><a href=""></a><span class="at">        </span><span class="fu">data-background-image</span><span class="kw">:</span><span class="at"> </span><span class="st">"styles/horiz-swoop-1.png, styles/background.jpg"</span></span>
-<span id="cb11-11" class="hljs-ln-code"><a href=""></a><span class="at">        </span><span class="fu">data-background-color</span><span class="kw">:</span><span class="at"> </span><span class="st">'#003155'</span></span>
+<span id="cb11-11" class="hljs-ln-code"><a href=""></a><span class="at">        </span><span class="fu">data-background-color</span><span class="kw">:</span><span class="at"> </span><span class="st">'{{&lt; brand color dark-blue &gt;}}'</span></span>
 <span id="cb11-12" class="hljs-ln-code"><a href=""></a><span class="at">      </span><span class="fu">footer</span><span class="kw">:</span><span class="at"> </span><span class="st">"U.S. Department of Commerce | National Oceanic and Atmospheric Administration | National Marine Fisheries Service"</span></span>
 <span id="cb11-13" class="hljs-ln-code"><a href=""></a><span class="at">      </span><span class="fu">controls</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
 <span id="cb11-14" class="hljs-ln-code"><a href=""></a><span class="at">      </span><span class="fu">navigation-mode</span><span class="kw">:</span><span class="at"> linear</span></span>
@@ -389,7 +389,7 @@ John Doe
 <span id="cb12-8" class="hljs-ln-code"><a href=""></a><span class="at">  </span><span class="fu">nmfs-slides-revealjs</span><span class="kw">:</span><span class="at"> </span></span>
 <span id="cb12-9" class="hljs-ln-code"><a href=""></a><span class="at">      </span><span class="fu">title-slide-attributes</span><span class="kw">:</span></span>
 <span id="cb12-10" class="hljs-ln-code"><a href=""></a><span class="at">        </span><span class="fu">data-background-image</span><span class="kw">:</span><span class="at"> </span><span class="st">"styles/horiz-swoop-1.png, styles/background.jpg"</span></span>
-<span id="cb12-11" class="hljs-ln-code"><a href=""></a><span class="at">        </span><span class="fu">data-background-color</span><span class="kw">:</span><span class="at"> </span><span class="st">'#003155'</span></span>
+<span id="cb12-11" class="hljs-ln-code"><a href=""></a><span class="at">        </span><span class="fu">data-background-color</span><span class="kw">:</span><span class="at"> </span><span class="st">'{{&lt; brand color dark-blue &gt;}}'</span></span>
 <span id="cb12-12" class="hljs-ln-code"><a href=""></a><span class="at">      </span><span class="fu">footer</span><span class="kw">:</span><span class="at"> </span><span class="st">"U.S. Department of Commerce | National Oceanic and Atmospheric Administration | National Marine Fisheries Service"</span></span>
 <span id="cb12-13" class="hljs-ln-code"><a href=""></a><span class="at">      </span><span class="fu">controls</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
 <span id="cb12-14" class="hljs-ln-code"><a href=""></a><span class="at">      </span><span class="fu">navigation-mode</span><span class="kw">:</span><span class="at"> linear</span></span>
@@ -398,6 +398,116 @@ John Doe
 <span id="cb12-17" class="hljs-ln-code"><a href=""></a><span class="at">      </span><span class="fu">background-transition</span><span class="kw">:</span><span class="at"> none</span></span>
 <span id="cb12-18" class="hljs-ln-code"><a href=""></a><span class="at">      </span><span class="fu">scrollable</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><code>scrollable</code>: enable scrolling on a slide when content overflows</p>
+</section>
+<section id="light-and-dark-themes" class="slide level2 content-double-swoop">
+<h2>Light and dark themes</h2>
+<p>Two color schemes following NMFS branding guidelines</p>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/paste-3.png"></p>
+<figcaption><code>brand: slides_light_brand.yml</code></figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/paste-2.png"></p>
+<figcaption><code>brand: slides_dark_brand.yml</code></figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="customizing-the-title-slide" class="slide level2 content-double-swoop">
+<h2>Customizing the title slide</h2>
+<p>Background and swoop types can be changed</p>
+<p>In the YAML header under <code>title-slide-attributes</code>:</p>
+<ul>
+<li><p><code>data-background-image</code> controls the swoop type and whether to include a background image</p></li>
+<li><p><code>data-background-color</code> controls the background color of the title slide if no background image is used</p></li>
+</ul>
+</section>
+<section id="customizing-the-title-slide-1" class="slide level2 content-double-swoop">
+<h2>Customizing the title slide</h2>
+<h3 id="swoop-type">Swoop type</h3>
+<div class="sourceCode" id="cb13"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb13-1"><a href=""></a><span class="fu">data-background-image</span><span class="kw">:</span><span class="at"> </span><span class="st">"[Swoop Path]"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-left">
+<figure>
+<p><img data-src="images/paste-10.png" style="width:90.0%"></p>
+<figcaption>Horizontal (<code>styles/horiz-swoop.png</code>)</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-left">
+<figure>
+<p><img data-src="images/paste-11.png" style="width:90.0%"></p>
+<figcaption>Vertical (<code>styles/horiz-swoop.png</code>)</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="customizing-the-title-slide-2" class="slide level2 content-double-swoop">
+<h2>Customizing the title slide</h2>
+<h3 id="background-image">Background image</h3>
+<div class="sourceCode" id="cb14"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb14-1"><a href=""></a><span class="fu">data-background-image</span><span class="kw">:</span><span class="at"> </span><span class="st">"[Swoop Path], [Background Path]"</span></span>
+<span id="cb14-2"><a href=""></a><span class="fu">data-background-image</span><span class="kw">:</span><span class="at"> </span><span class="st">"styles/horiz-swoop-1.png, styles/background.jpg"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+<img data-src="images/paste-8.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="customizing-the-title-slide-3" class="slide level2 content-double-swoop">
+<h2>Customizing the title slide</h2>
+<h3 id="background-image-1">Background image</h3>
+<div class="sourceCode" id="cb15"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb15-1"><a href=""></a><span class="fu">data-background-image</span><span class="kw">:</span><span class="at"> </span><span class="st">"[Swoop Path], [Background Path]"</span></span>
+<span id="cb15-2"><a href=""></a><span class="fu">data-background-color</span><span class="kw">:</span><span class="at"> </span><span class="st">"{{&lt; brand color dark-blue &gt;}}"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="callout callout-important callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Important</strong></p>
+</div>
+<div class="callout-content">
+<p>If using a background image that’s different from your theme (i.e., dark background in light theme, light background in dark theme), make sure to also change the <code>data-background-color</code> field to match the background so Quarto knows to use a contrasting font color</p>
+</div>
+</div>
+</div>
+</section>
+<section id="customizing-the-title-slide-4" class="slide level2 content-double-swoop">
+<h2>Customizing the title slide</h2>
+<h3 id="background-color">Background color</h3>
+<p>For <a href="_brand.yml">brand colors</a> use <code>{{&lt; brand color [COLOR] &gt;}}</code></p>
+<div class="sourceCode" id="cb16"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb16-1"><a href=""></a><span class="fu">data-background-color</span><span class="kw">:</span><span class="at"> </span><span class="st">"{{&lt; brand color [COLOR] &gt;}}"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-left">
+<figure>
+<p><img data-src="images/paste-16.png" style="width:85.0%"></p>
+<figcaption><code>{{&lt; brand color dark-blue &gt;}}</code></figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-left">
+<figure>
+<p><img data-src="images/paste-15.png" style="width:85.0%"></p>
+<figcaption><code>{{&lt; brand color fisheries-teal &gt;}}</code></figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
 </section></section>
 <section>
 <section id="content-slides" class="title-slide slide level1 divider center">
@@ -409,25 +519,43 @@ John Doe
 <p>Example slide for main content showcasing with no swoop on the footer</p>
 <p>Note the small noaa logo</p>
 </section>
-<section id="content-slides-swoop-footer" class="slide level2 content-swoop">
-<h2>Content slides: swoop footer</h2>
+<section id="content-slides-swoop-no-runner" class="slide level2 content-swoop">
+<h2>Content slides: swoop, no runner</h2>
 <p>Example slide for main content showcasing NOAA’s swoop in the footer</p>
 <p>Adds the <code>.content-swoop</code> class to the header</p>
 </section>
-<section id="content-slides-teal-swoop-footer" class="slide level2 content-swoop-teal">
-<h2>Content slides: teal swoop footer</h2>
+<section id="content-slides-swoop-teal-runner" class="slide level2 content-swoop-teal">
+<h2>Content slides: swoop, teal runner</h2>
 <p>Example slide for main content showcasing NOAA’s swoop in the footer with a teal runner</p>
 <p>Adds the <code>.content-swoop-teal</code> class to the header</p>
 </section>
-<section id="content-slides-navy-swoop-footer" class="slide level2 content-swoop-navy">
-<h2>Content slides: navy swoop footer</h2>
+<section id="content-slides-swoop-navy-runner" class="slide level2 content-swoop-navy">
+<h2>Content slides: swoop, navy runner</h2>
 <p>Example slide for main content showcasing NOAA’s swoop in the footer with a navy runner</p>
 <p>Adds the <code>.content-swoop-navy</code> class to the header</p>
 </section>
-<section id="content-slides-double-swoop-footer" class="slide level2 content-double-swoop">
-<h2>Content slides: double swoop footer</h2>
+<section id="content-slides-double-swoop" class="slide level2 content-double-swoop">
+<h2>Content slides: double swoop</h2>
 <p>Example slide for main content showcasing NOAA’s horizontally-oriented swoop footer</p>
 <p>Adds the <code>.content-double-swoop</code> class to the header</p>
+</section>
+<section id="changing-the-background-color-of-a-single-slide" class="slide level2 content-double-swoop" data-background-color="#005E5E">
+<h2>Changing the background color of a single slide</h2>
+<p>Add <code>{background-color=[ColorHexCode]}</code> to the slide header</p>
+<p>Heading and body text colors are changed to a contrasting color</p>
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Note</strong></p>
+</div>
+<div class="callout-content">
+<p>Brand color names currently are not supported in slide attributes. Reference <a href="_brand.yml">_brand.yml</a> for brand color hex codes.</p>
+</div>
+</div>
+</div>
 </section></section>
 <section id="divider-slides" class="title-slide slide level1 divider center">
 <h1>Divider slides</h1>

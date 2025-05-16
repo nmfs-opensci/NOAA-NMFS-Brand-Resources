@@ -9,8 +9,13 @@ color:
   background: dark-blue
   foreground: gray-tint-3
   primary: noaa-sea
-  
+
   palette:
+  
+    ## Fisheries slides
+    dark-blue: "#003155"
+    h3: light-sea-blue
+    
     ## NOAA Core (Fisheries)
     noaa-sky: "#003087"
     midnight-sky: "#001743"
@@ -120,8 +125,6 @@ color:
     teal: fisheries-teal
     white: gull-white
 
-    ## Fisheries slides dark blue
-    dark-blue: "#003155"
 
 
 logo: 
@@ -195,6 +198,11 @@ logo:
   large: noaa-emblem
 
 typography:
+  base: Open Sans
+  headings: 
+    family: Open Sans
+    color: pale-sea-blue
+
   fonts:
     # NOAA general
     - family: Arial

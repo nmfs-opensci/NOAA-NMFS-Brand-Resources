@@ -115,8 +115,9 @@ color:
     teal: fisheries-teal
     white: gull-white
     
-    ## Fisheries slides dark blue
+    ## Fisheries slides 
     dark-blue: "#003155"
+    h3: navy
     
   background: gull-white
   foreground: dark-navy
