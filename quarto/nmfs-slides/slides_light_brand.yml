@@ -114,6 +114,11 @@ color:
     purple: urchin
     teal: fisheries-teal
     white: gull-white
+    
+    ## Fisheries slides 
+    dark-blue: "#003155"
+    h3: navy
+    
   background: gull-white
   foreground: dark-navy
   primary: noaa-sea
@@ -121,67 +126,67 @@ color:
 logo: 
   images: 
     noaa-emblem:
-      path: https://raw.githubusercontent.com/nmfs-opensci/nmfs-branding/refs/heads/main/logos/noaa-emblem-rgb-2022.png
+      path: logos/noaa-emblem-rgb-2022.png
       alt: NOAA emblem
     noaa-emblem-whitespace:
-      path: https://raw.githubusercontent.com/nmfs-opensci/nmfs-branding/refs/heads/main/logos/noaa-emblem-rgb-withspace-2022.png
+      path: logos/noaa-emblem-rgb-withspace-2022.png
       alt: NOAA emblem with whitespace
     noaa-emblem-white:
-      path: https://raw.githubusercontent.com/nmfs-opensci/nmfs-branding/refs/heads/main/logos/noaa-emblem-rgb-white-2022.png
+      path: logos/noaa-emblem-rgb-white-2022.png
       alt: NOAA emblem, monochrome white
     noaa-emblem-blue:
-      path: https://raw.githubusercontent.com/nmfs-opensci/nmfs-branding/refs/heads/main/logos/noaa-emblem-rgb-blue-2022.png
+      path: logos/noaa-emblem-rgb-blue-2022.png
       alt: NOAA emblem, monochrome blue
     noaa-emblem-agency-name-horiz:
-      path: https://raw.githubusercontent.com/nmfs-opensci/nmfs-branding/refs/heads/main/logos/condensed-NOAA-logo-lockup-horizontal-rgb.png
+      path: logos/condensed-NOAA-logo-lockup-horizontal-rgb.png
       alt: NOAA emblem with agency name
     noaa-emblem-agency-name-vert:
-      path: https://raw.githubusercontent.com/nmfs-opensci/nmfs-branding/refs/heads/main/logos/condensed-NOAA-logo-lockup-verticall-rgb.png
+      path: logos/condensed-NOAA-logo-lockup-verticall-rgb.png
       alt: NOAA emblem with agency name
     noaa-logo:
-      path: https://raw.githubusercontent.com/nmfs-opensci/nmfs-branding/refs/heads/main/logos/noaa-logo-rgb-2022.png
+      path: logos/noaa-logo-rgb-2022.png
       alt: NOAA logo
     noaa-logo-whitespace:
-      path: https://raw.githubusercontent.com/nmfs-opensci/nmfs-branding/refs/heads/main/logos/noaa-logo-rgb-withspace-2022.png
+      path: logos/noaa-logo-rgb-withspace-2022.png
       alt: NOAA logo with whitespace
     noaa-logo-white:
-      path: https://raw.githubusercontent.com/nmfs-opensci/nmfs-branding/refs/heads/main/logos/noaa-logo-rgb-white-2022.png
+      path: logos/noaa-logo-rgb-white-2022.png
       alt: NOAA logo, monochrome white
     noaa-logo-blue:
-      path: https://raw.githubusercontent.com/nmfs-opensci/nmfs-branding/refs/heads/main/logos/noaa-logo-rgb-blue-2022.png
+      path: logos/noaa-logo-rgb-blue-2022.png
       alt: NOAA logo, monochrome blue
     noaa-logo-whiteline:
-      path: https://raw.githubusercontent.com/nmfs-opensci/nmfs-branding/refs/heads/main/logos/noaa-logo-white-line-rgb.png
+      path: logos/noaa-logo-white-line-rgb.png
       alt: NOAA logo, white outline
     noaa-logo-agency-name:
-      path: https://raw.githubusercontent.com/nmfs-opensci/nmfs-branding/refs/heads/main/logos/noaa-logo-with-agency-name-rgb-2024.png
+      path: logos/noaa-logo-with-agency-name-rgb-2024.png
       alt: NOAA logo with agency name
     noaa-logo-agency-name-condensed:
-      path: https://raw.githubusercontent.com/nmfs-opensci/nmfs-branding/refs/heads/main/logos/noaa-logo-with-agency-name-condensed-rgb-2024.png
+      path: logos/noaa-logo-with-agency-name-condensed-rgb-2024.png
       alt: NOAA logo with condensed agency name
     noaa-wordmark:
-      path: https://raw.githubusercontent.com/nmfs-opensci/nmfs-branding/refs/heads/main/logos/noaa-wordmark-rgb-2022.png
+      path: logos/noaa-wordmark-rgb-2022.png
       alt: NOAA wordmark logo
     noaa-wordmark-whitespace:
-      path: https://raw.githubusercontent.com/nmfs-opensci/nmfs-branding/refs/heads/main/logos/noaa-wordmark-rgb-withspace-2022.png
+      path: logos/noaa-wordmark-rgb-withspace-2022.png
       alt: NOAA wordmark logo with whitespace
     noaa-wordmark-white:
-      path: https://raw.githubusercontent.com/nmfs-opensci/nmfs-branding/refs/heads/main/logos/noaa-wordmark-rgb-white-2022.png
+      path: logos/noaa-wordmark-rgb-white-2022.png
       alt: NOAA wordmark logo, monochrome white
     noaa-wordmark-blue:
-      path: https://raw.githubusercontent.com/nmfs-opensci/nmfs-branding/refs/heads/main/logos/noaa-wordmark-rgb-blue-2022.png
+      path: logos/noaa-wordmark-rgb-blue-2022.png
       alt: NOAA wordmark logo, monochrome blue
     fisheries-emblem-horiz:
-      path: https://raw.githubusercontent.com/nmfs-opensci/nmfs-branding/refs/heads/main/logos/NOAA_FISHERIES_H.png
+      path: logos/NOAA_FISHERIES_H.png
       alt: NOAA Fisheries emblem
     fisheries-emblem-vert:
-      path: https://raw.githubusercontent.com/nmfs-opensci/nmfs-branding/refs/heads/main/logos/NOAA_FISHERIES_V.png
+      path: logos/NOAA_FISHERIES_V.png
       alt: NOAA Fisheries emblem
     fisheries-logo-horiz:
-      path: https://raw.githubusercontent.com/nmfs-opensci/nmfs-branding/refs/heads/main/logos/NOAA_FISHERIES_logoH.png
+      path: logos/NOAA_FISHERIES_logoH.png
       alt: NOAA Fisheries logo
     fisheries-logo-vert:
-      path: https://raw.githubusercontent.com/nmfs-opensci/nmfs-branding/refs/heads/main/logos/NOAA_FISHERIES_logoV.png
+      path: logos/NOAA_FISHERIES_logoV.png
       alt: NOAA Fisheries logo
     
   small: noaa-logo  
@@ -228,4 +233,4 @@ typography:
   base: Open Sans
   headings: 
     family: Open Sans
-    color: dark-teal
+    color: fisheries-teal

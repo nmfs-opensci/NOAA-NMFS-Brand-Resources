@@ -5,7 +5,17 @@ meta:
   link: https://fisheries.noaa.gov
 
 color:
+
+  background: dark-blue
+  foreground: gray-tint-3
+  primary: noaa-sea
+
   palette:
+  
+    ## Fisheries slides
+    dark-blue: "#003155"
+    h3: light-sea-blue
+    
     ## NOAA Core (Fisheries)
     noaa-sky: "#003087"
     midnight-sky: "#001743"
@@ -99,7 +109,7 @@ color:
     yellow: "#DDBB25"
     vivid-yellow: "#F0DE02"
     bright-yellow: "#FFFF65"
-
+    
     # Green
     dk-green: dark-seagrass
     green: seagrass
@@ -115,13 +125,7 @@ color:
     teal: fisheries-teal
     white: gull-white
 
-    ## Slide background colors from PPT templates
-    dark-blue: '#003155'
-    light-teal: "#13B9C2"
 
-  background: gull-white
-  foreground: dark-navy
-  primary: noaa-sea
 
 logo: 
   images: 
@@ -194,6 +198,11 @@ logo:
   large: noaa-emblem
 
 typography:
+  base: Open Sans
+  headings: 
+    family: Open Sans
+    color: pale-sea-blue
+
   fonts:
     # NOAA general
     - family: Arial
@@ -201,7 +210,6 @@ typography:
     - family: Calibri
       source: google
     - family: Helvetica Neue
-      source: google
     - family: Lexend
       source: google
     - family: Noto Sans
@@ -229,8 +237,4 @@ typography:
     - family: Cambria # Serif
       source: google
 
-    
-  base: Open Sans
-  headings: 
-    family: Open Sans
-    color: dark-teal
+

@@ -114,11 +114,11 @@ color:
     purple: urchin
     teal: fisheries-teal
     white: gull-white
-
-    ## Slide background colors from PPT templates
-    dark-blue: '#003155'
-    light-teal: "#13B9C2"
-
+    
+    ## Fisheries slides 
+    dark-blue: "#003155"
+    h3: navy
+    
   background: gull-white
   foreground: dark-navy
   primary: noaa-sea
@@ -233,4 +233,4 @@ typography:
   base: Open Sans
   headings: 
     family: Open Sans
-    color: dark-teal
+    color: fisheries-teal

@@ -1,0 +1,143 @@
+/*-- scss:defaults --*/
+
+$presentation-h1-font-size: 1.75em;
+$dark-bg-text-color: $brand-sky-tint-3;
+$light-bg-text-color: $brand-dark-navy;
+
+/* TODO: Customize presentation appearance by setting SCSS variables */
+/* See https://quarto.org/docs/presentations/revealjs/themes.html#customizing-themes */
+
+/*-- scss:rules --*/
+
+
+// Slide numbers to the bottom-left
+.slide-number, .reveal.has-logo .slide-number {
+    bottom: 14px !important;
+    left: 50px !important;
+    top: unset !important;
+    color: $primary !important;
+    font-size: 0.5em;
+}
+
+.reveal .slide-number > a[href*='/title-slide'] {
+    display: none;
+}
+
+#title-slide.quarto-title-block {
+    transform: translate(0, 20%);
+    height: 60%;
+    min-height: 60%;
+    display: block grid !important;
+}
+
+#title-slide .title{
+    margin-bottom: 0;
+    max-width: 80%;
+    position: relative;
+    left: 200px;
+    text-align: left;
+    line-height: 1.1em;
+    margin-bottom: 0;
+}
+
+#title-slide .subtitle{
+    margin-bottom: 1rem;
+    max-width: 70%;
+    position: relative;
+    left: 200px;
+    text-align: left;
+    font-size: 1.1em;
+    line-height: 1.1em;
+    text-wrap: balance;
+}
+
+#title-slide .quarto-title-authors {
+    max-width: 100%;
+    position: relative;
+    right: 0;
+    text-align: right;
+    text-wrap: balance;
+    display: block;
+    object-position: right;
+
+}
+
+#title-slide .quarto-title-author {
+    position: relative;
+    padding-left: 0em;
+    padding-right: 0em;
+    left: 40%;
+    max-width: 60%;
+
+}
+
+#title-slide .date {
+    position: relative;
+    text-align: right;
+    font-size: .9em;
+}
+
+.backgrounds .content-swoop {
+    background-image: url("/styles/bottom-swoop.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.backgrounds .content-swoop-teal {
+    background-image: url("/styles/bottom-swoop-teal.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.backgrounds .content-swoop-navy {
+    background-image: url("/styles/bottom-swoop-navy.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+.backgrounds .content-double-swoop {
+    background-image: url("/styles/bottom-swoop-double.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.backgrounds .divider {
+    background-image: url("/styles/divider-swoop.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+body:has(.content-swoop, .content-swoop-teal, .content-swoop-navy, .content-double-swoop, .divider) {
+    --logo-display: none;
+}
+
+body:has(.present.quarto-title-block)  {
+    --footer-display: none;
+    --slide-menu-display: none;
+}
+
+.slide-logo {
+    display: var(--logo-display, block) !important;
+}
+
+.footer {
+    display: var(--footer-display, block) !important;
+    font-size: 0.4em !important;
+    position: relative;
+    left: 7%;
+    text-align: left !important;
+    color: $primary !important;
+}
+
+.slide-menu-button {
+    display: var(--slide-menu-display, block) !important;
+}
+
+
+.reveal h3 {
+    color: $brand-h3
+}
