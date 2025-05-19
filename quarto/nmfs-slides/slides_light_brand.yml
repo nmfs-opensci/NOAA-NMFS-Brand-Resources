@@ -6,6 +6,10 @@ meta:
 
 color:
   palette:
+    ## Fisheries slides 
+    dark-blue: "#003155"
+    h3: navy
+    
     ## NOAA Core (Fisheries)
     noaa-sky: "#003087"
     midnight-sky: "#001743"
@@ -115,9 +119,7 @@ color:
     teal: fisheries-teal
     white: gull-white
     
-    ## Fisheries slides 
-    dark-blue: "#003155"
-    h3: navy
+
     
   background: gull-white
   foreground: dark-navy
