@@ -19,8 +19,8 @@ contributes:
         - _extensions/nmfs-opensci/nmfs-brand/_brand.yml
         - _extensions/nmfs-opensci/nmfs-brand/slides_dark_brand.yml
         - _extensions/nmfs-opensci/nmfs-brand/slides_light_brand.yml
-        - _extensions/nmfs-opensci/nmfs-brand/logos
-        - _extensions/nmfs-slides/styles
+        - _extensions/nmfs-opensci/nmfs-brand/logos/
+        - _extensions/nmfs-slides/styles/
 
 
       
