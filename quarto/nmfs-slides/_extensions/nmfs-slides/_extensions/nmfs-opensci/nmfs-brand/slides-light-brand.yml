@@ -1,0 +1,238 @@
+meta:
+  name: 
+    full: National Marine Fisheries Service
+    short: NOAA Fisheries
+  link: https://fisheries.noaa.gov
+
+color:
+  palette:
+    ## Fisheries slides 
+    dark-blue: "#003155"
+    h3: navy
+    
+    ## NOAA Core (Fisheries)
+    noaa-sky: "#003087"
+    midnight-sky: "#001743"
+    twilight-sky: "#002364"
+    noaa-sea: "#0085CA" 
+    medium-sea-blue: "#056FB7"
+    deep-sea-blue: "#00559B"
+    light-sea-blue: "#5EB6D9"
+    pale-sea-blue: "#C6E6F0"
+    whale-gray: "#323C46"
+    dove-gray: "#A5AAAF"
+    gull-white: "#FFFFFF"
+    
+    ## Fisheries Web Only
+    navy-blend: "#004391"
+    shark-gray: "#44545F"
+    
+    ## Fisheries Complementary
+    # Oceans (National)
+    oceans-midnight-sky: midnight-sky
+    oceans-twilight-sky: twilight-sky
+    oceans-noaa-sky: noaa-sky
+    # oceans-noaa-sea: noaa-sea
+    oceans-light-sea-blue: light-sea-blue
+    oceans-pale-sea-blue: pale-sea-blue
+
+    # Waves (West Coast)
+    dark-teal: "#005E5E"
+    fisheries-teal: "#00797F"
+    waves: "#1EBEC7"
+    pale-teal: "#90DFE3"
+    
+    # Seagrass (Southeast)
+    dark-seagrass: "#365E17"
+    seagrass: "#4B8320"
+    vivid-seagrass: "#76BC21"
+    bright-seagrass: "#B1DC6B"
+
+    # Urchin (Mid-Atlantic)
+    dark-urchin: "#3B469A"
+    urchin: "#5761C0"
+    vivid-urchin: "#737BE6"
+    bright-urchin: "#A8B8FF"
+
+    # Crustacean (Alaska)
+    dk-crustacean: "#853B00"
+    crustacean: "#DB6015"
+    vivid-crustacean: "#FF8400"
+    br-crustacean: "#FFAB38"
+
+    # Coral (Pacific Islands)
+    dark-coral: "#B71300"
+    coral: "#B71300"
+    vivid-coral: "#DB2207"
+    bright-coral: "#FF6C57"
+
+    ## Fisheries Background and Tint
+    # Blues
+    bg-midnight-sky: midnight-sky
+    sky-tint-1: "#C2D9E3"
+    sky-tint-2: "#D5E6ED"
+    sky-tint-3: "#E9F3F6"
+
+    # Greens
+    turtle-green: "#283A38"
+    green-tint-1: "#CBDAC5"
+    green-tint-2: "#E7EFD5"
+    green-tint-3: "#F7FAEE"
+
+    # Grays
+    bg-whale-gray: whale-gray
+    dove-gray-tint-1: "#A5AAAF"
+    dove-gray-tint-2: "#CBCFD1"
+    gray-tint-3: "#F1F2F3"
+
+    ## NOAA Alert Colors
+    # Red
+    dark-red: dark-coral
+    red: coral
+    vivid-red: vivid-coral
+    bright-red: bright-coral
+
+    # Orange
+    dark-orange: dk-crustacean
+    orange: crustacean
+    vivid-orange: vivid-crustacean
+    bright-orange: br-crustacean
+
+    # Yellow
+    dk-yellow: "#A8821B"
+    yellow: "#DDBB25"
+    vivid-yellow: "#F0DE02"
+    bright-yellow: "#FFFF65"
+
+    # Green
+    dk-green: dark-seagrass
+    green: seagrass
+    vivid-green: vivid-seagrass
+    bright-green: bright-seagrass
+
+    ## Basic colors
+    blue: noaa-sky
+    dark-navy: midnight-sky
+    navy: navy-blend
+    gray: whale-gray
+    purple: urchin
+    teal: fisheries-teal
+    white: gull-white
+    
+
+    
+  background: gull-white
+  foreground: dark-navy
+  primary: noaa-sea
+
+logo: 
+  images: 
+    noaa-emblem:
+      path: logos/emblem.png
+      alt: NOAA emblem
+    noaa-emblem-whitespace:
+      path: logos/emblem-withspace.png
+      alt: NOAA emblem with whitespace
+    noaa-emblem-white:
+      path: logos/emblem-white.png
+      alt: NOAA emblem, monochrome white
+    noaa-emblem-blue:
+      path: logos/emblem-blue.png
+      alt: NOAA emblem, monochrome blue
+    noaa-emblem-agency-name-horiz:
+      path: logos/condensed-lockup-h.png
+      alt: NOAA emblem with agency name
+    noaa-emblem-agency-name-vert:
+      path: logos/condensed-lockup-v.png
+      alt: NOAA emblem with agency name
+    noaa-logo:
+      path: logos/logo.png
+      alt: NOAA logo
+    noaa-logo-whitespace:
+      path: logos/logo-withspace.png
+      alt: NOAA logo with whitespace
+    noaa-logo-white:
+      path: logos/logo-white.png
+      alt: NOAA logo, monochrome white
+    noaa-logo-blue:
+      path: logos/logo-blue.png
+      alt: NOAA logo, monochrome blue
+    noaa-logo-whiteline:
+      path: logos/logo-white-line.png
+      alt: NOAA logo, white outline
+    noaa-logo-agency-name:
+      path: logos/logo-agency.png
+      alt: NOAA logo with agency name
+    noaa-logo-agency-name-condensed:
+      path: logos/logo-agency-condensed.png
+      alt: NOAA logo with condensed agency name
+    noaa-wordmark:
+      path: logos/wordmark.png
+      alt: NOAA wordmark logo
+    noaa-wordmark-whitespace:
+      path: logos/wordmark-withspace.png
+      alt: NOAA wordmark logo with whitespace
+    noaa-wordmark-white:
+      path: logos/wordmark-white.png
+      alt: NOAA wordmark logo, monochrome white
+    noaa-wordmark-blue:
+      path: logos/wordmark-blue.png
+      alt: NOAA wordmark logo, monochrome blue
+    fisheries-emblem-horiz:
+      path: logos/fisheries-emblem-h.png
+      alt: NOAA Fisheries emblem
+    fisheries-emblem-vert:
+      path: logos/fisheries-emblem-v.png
+      alt: NOAA Fisheries emblem
+    fisheries-logo-horiz:
+      path: logos/fisheries-logo-h.png
+      alt: NOAA Fisheries logo
+    fisheries-logo-vert:
+      path: logos/fisheries-logo-v.png
+      alt: NOAA Fisheries logo
+    
+  small: noaa-logo  
+  medium: noaa-logo
+  large: noaa-emblem
+
+typography:
+  fonts:
+    # NOAA general
+    - family: Arial
+      source: google
+    - family: Calibri
+      source: google
+    - family: Helvetica Neue
+      source: google
+    - family: Lexend
+      source: google
+    - family: Noto Sans
+      source: google
+    - family: Nunito Sans
+      source: google
+    - family: Open Sans
+      source: google
+    - family: Public Sans
+      source: google
+    - family: Roboto
+      source: google
+    - family: Source Sans Pro
+      source: google
+    - family: Source Sans 3
+      source: google
+    
+    # Fisheries (Open Sans from above as well)
+    - family: Arial Narrow
+      source: google
+    - family: Helvetica Neue Condensed
+      source: google
+    - family: Minion # Serif
+      source: google
+    - family: Cambria # Serif
+      source: google
+
+    
+  base: Open Sans
+  headings: 
+    family: Open Sans
+    color: fisheries-teal
