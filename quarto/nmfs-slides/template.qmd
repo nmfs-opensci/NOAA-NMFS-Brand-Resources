@@ -4,11 +4,11 @@ subtitle: Using quarto to build a branded slide presentation
 author: John Doe
 institute: NMFS Open Science
 date: last-modified
-brand: slides_light_brand.yml
+brand: _extensions/nmfs-slides/_extensions/nmfs-opensci/nmfs-brand/slides_dark_brand.yml
 format:
   nmfs-slides-revealjs: 
     title-slide-attributes:
-      data-background-image: "styles/horiz-swoop-1.png"
+      data-background-image: "_extensions/nmfs-slides/styles/horiz-swoop-1.png"
       data-background-color: '{{< brand color dark-blue >}}'
     footer: "U.S. Department of Commerce | National Oceanic and Atmospheric Administration | National Marine Fisheries Service"
     controls: true
@@ -71,7 +71,7 @@ subtitle: Using quarto to build a branded slide presentation
 author: John Doe 
 institute: NMFS Open Science
 date: last-modified
-brand: slides_light_brand.yml
+brand: _extensions/nmfs-slides/_extensions/nmfs-opensci/nmfs-brand/slides_light_brand.yml
 ```
 
 `brand`: file for NOAA branding metadata
@@ -84,7 +84,7 @@ subtitle: Using quarto to build a branded slide presentation
 author: John Doe 
 institute: NMFS Open Science
 date: last-modified
-brand: slides_dark_brand.yml
+brand: _extensions/nmfs-slides/_extensions/nmfs-opensci/nmfs-brand/slides_light_brand.yml
 format:
   nmfs-slides-revealjs: 
 ```
@@ -99,11 +99,11 @@ subtitle: Using quarto to build a branded slide presentation
 author: John Doe 
 institute: NMFS Open Science
 date: last-modified
-brand: slides_dark_brand.yml
+brand: _extensions/nmfs-slides/_extensions/nmfs-opensci/nmfs-brand/slides_light_brand.yml
 format:
   nmfs-slides-revealjs: 
       title-slide-attributes:
-        data-background-image: "styles/horiz-swoop-1.png, styles/background.jpg"
+        data-background-image: "_extensions/nmfs-slides/styles/horiz-swoop-1.png, images/background.jpg"
         data-background-color: '{{{< brand color dark-blue >}}}'
 ```
 
@@ -117,11 +117,11 @@ subtitle: Using quarto to build a branded slide presentation
 author: John Doe 
 institute: NMFS Open Science
 date: last-modified
-brand: slides_dark_brand.yml
+brand: _extensions/nmfs-slides/_extensions/nmfs-opensci/nmfs-brand/slides_light_brand.yml
 format:
   nmfs-slides-revealjs: 
       title-slide-attributes:
-        data-background-image: "styles/horiz-swoop-1.png, styles/background.jpg"
+        data-background-image: "_extensions/nmfs-slides/styles/horiz-swoop-1.png, images/background.jpg"
         data-background-color: '{{{< brand color dark-blue >}}}'
       footer: "U.S. Department of Commerce | National Oceanic and Atmospheric Administration | National Marine Fisheries Service"
 ```
@@ -136,11 +136,11 @@ subtitle: Using quarto to build a branded slide presentation
 author: John Doe 
 institute: NMFS Open Science
 date: last-modified
-brand: slides_dark_brand.yml
+brand: _extensions/nmfs-slides/_extensions/nmfs-opensci/nmfs-brand/slides_light_brand.yml
 format:
   nmfs-slides-revealjs: 
       title-slide-attributes:
-        data-background-image: "styles/horiz-swoop-1.png, styles/background.jpg"
+        data-background-image: "_extensions/nmfs-slides/styles/horiz-swoop-1.png, images/background.jpg"
         data-background-color: '{{{< brand color dark-blue >}}}'
       footer: "U.S. Department of Commerce | National Oceanic and Atmospheric Administration | National Marine Fisheries Service"
       controls: true
@@ -156,11 +156,11 @@ subtitle: Using quarto to build a branded slide presentation
 author: John Doe 
 institute: NMFS Open Science
 date: last-modified
-brand: slides_dark_brand.yml
+brand: _extensions/nmfs-slides/_extensions/nmfs-opensci/nmfs-brand/slides_light_brand.yml
 format:
   nmfs-slides-revealjs: 
       title-slide-attributes:
-        data-background-image: "styles/horiz-swoop-1.png, styles/background.jpg"
+        data-background-image: "_extensions/nmfs-slides/styles/horiz-swoop-1.png, images/background.jpg"
         data-background-color: '{{{< brand color dark-blue >}}}'
       footer: "U.S. Department of Commerce | National Oceanic and Atmospheric Administration | National Marine Fisheries Service"
       controls: true
@@ -177,11 +177,11 @@ subtitle: Using quarto to build a branded slide presentation
 author: John Doe 
 institute: NMFS Open Science
 date: last-modified
-brand: slides_dark_brand.yml
+brand: _extensions/nmfs-slides/_extensions/nmfs-opensci/nmfs-brand/slides_light_brand.yml
 format:
   nmfs-slides-revealjs: 
       title-slide-attributes:
-        data-background-image: "styles/horiz-swoop-1.png, styles/background.jpg"
+        data-background-image: "_extensions/nmfs-slides/styles/horiz-swoop-1.png, images/background.jpg"
         data-background-color: '{{{< brand color dark-blue >}}}'
       footer: "U.S. Department of Commerce | National Oceanic and Atmospheric Administration | National Marine Fisheries Service"
       controls: true
@@ -200,11 +200,11 @@ subtitle: Using quarto to build a branded slide presentation
 author: John Doe 
 institute: NMFS Open Science
 date: last-modified
-brand: slides_dark_brand.yml
+brand: _extensions/nmfs-slides/_extensions/nmfs-opensci/nmfs-brand/slides_light_brand.yml
 format:
   nmfs-slides-revealjs: 
       title-slide-attributes:
-        data-background-image: "styles/horiz-swoop-1.png, styles/background.jpg"
+        data-background-image: "_extensions/nmfs-slides/styles/horiz-swoop-1.png, images/background.jpg"
         data-background-color: '{{{< brand color dark-blue >}}}'
       footer: "U.S. Department of Commerce | National Oceanic and Atmospheric Administration | National Marine Fisheries Service"
       controls: true
@@ -224,11 +224,11 @@ subtitle: Using quarto to build a branded slide presentation
 author: John Doe 
 institute: NMFS Open Science
 date: last-modified
-brand: slides_dark_brand.yml
+brand: _extensions/nmfs-slides/_extensions/nmfs-opensci/nmfs-brand/slides_light_brand.yml
 format:
   nmfs-slides-revealjs: 
       title-slide-attributes:
-        data-background-image: "styles/horiz-swoop-1.png, styles/background.jpg"
+        data-background-image: "_extensions/nmfs-slides/styles/horiz-swoop-1.png, images/background.jpg"
         data-background-color: '{{{< brand color dark-blue >}}}'
       footer: "U.S. Department of Commerce | National Oceanic and Atmospheric Administration | National Marine Fisheries Service"
       controls: true
@@ -246,9 +246,9 @@ format:
 Two color schemes following NMFS branding guidelines
 
 ::: {layout-ncol="2"}
-![`brand: slides_light_brand.yml`](images/paste-3.png)
+![`brand: _extensions/nmfs-slides/_extensions/nmfs-opensci/nmfs-brand/slides_light_brand.yml`](images/paste-3.png)
 
-![`brand: slides_dark_brand.yml`](images/paste-2.png)
+![`brand: _extensions/nmfs-slides/_extensions/nmfs-opensci/nmfs-brand/slides_dark_brand.yml`](images/paste-2.png)
 :::
 
 ## Customizing the title slide {.content-double-swoop}
