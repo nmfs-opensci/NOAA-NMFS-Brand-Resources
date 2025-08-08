@@ -3,7 +3,7 @@
 ## Installing
 
 ```bash
-quarto use template nmfs-opensci/noaa-nmfs-brand-resources/quarto/nmfs-slides
+quarto use template nmfs-opensci/NOAA-NMFS-Brand-Resources/quarto/nmfs-slides
 ```
 
 This will install the extension and create an example qmd file that you can use as a starting place for your slide deck.
